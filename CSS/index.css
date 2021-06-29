@@ -1,0 +1,404 @@
+/* SuperContainer */
+html {
+  width: 1900px;
+  height: 900px;
+  padding: none;
+  background: #d0dabe;
+}
+
+/* Banner 1 */
+#banner1 {
+  position: absolute;
+  left: 14.48%;
+  right: 12.5%;
+  top: 13.33%;
+  bottom: 73.15%;
+
+  background: #4c2e05;
+  border-radius: 7px;
+  z-index: -1;
+}
+#announcement {
+  position: absolute;
+  left: 26.35%;
+  right: 23.12%;
+  top: 18.06%;
+  bottom: 74.35%;
+
+  font-family: Codec Cold Trial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  padding-top: 20px;
+
+  color: #e9e3b4;
+}
+#learn {
+  text-decoration: none;
+  color: #758e4f;
+}
+
+#main_banner {
+  width: 1910px;
+  height: 164px;
+  margin-top: 0px;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+
+  background: #e9e3b4;
+}
+
+/* Ellipse 1 */
+#logo_container {
+  position: absolute;
+  left: 4.27%;
+  right: 88.23%;
+  top: 1.48%;
+  bottom: 86.67%;
+  height: 128px;
+  width: 200px;
+  padding-top: 1rem;
+
+  background: url(/Assets/Ellipse\ 1.svg);
+  background-repeat: no-repeat;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* MENU */
+#menu_button {
+  position: absolute;
+  left: 12.97%;
+  right: 79.32%;
+  top: 58px;
+  bottom: 89.63%;
+
+  font-family: Codec Cold Trial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 0px;
+
+  color: #4c2e05;
+}
+
+/* GIFT CARDS */
+#gift_button {
+  position: absolute;
+  left: 18.28%;
+  right: 65.42%;
+  top: 58px;
+  bottom: 89.35%;
+
+  font-family: Codec Cold Trial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 0px;
+
+  color: #4c2e05;
+}
+
+/* Find a Store */
+#location_img {
+  background: url(/Assets/location.svg);
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 61px;
+
+  position: absolute;
+  left: 70%;
+  right: 30px;
+  top: 45px;
+  bottom: 89.54%;
+}
+#find_a_store {
+  position: absolute;
+  left: 71.56%;
+  right: 17.6%;
+  top: 58px;
+  bottom: 89.91%;
+
+  font-family: Codec Cold Trial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 0px;
+
+  color: #4c2e05;
+}
+
+/* Cart */
+#cart_logo {
+  background: url(/Assets/shoppingcart.svg);
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 61px;
+
+  position: absolute;
+  right: 200px;
+  top: 50px;
+  bottom: 89.54%;
+}
+
+#cart1 {
+  position: absolute;
+  left: 89.22%;
+  right: 4.27%;
+  top: 58px;
+  bottom: 89.63%;
+
+  font-family: Codec Cold Trial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 0px;
+
+  color: #4c2e05;
+}
+
+/* Content Box 1 */
+#content_rectangle1 {
+  position: absolute;
+  left: 8.44%;
+  right: 51.51%;
+  top: 30.19%;
+  bottom: 48.33%;
+  width: 650px;
+  height: 250px;
+
+  background: #e9e3b4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+#content1 {
+  font-family: Varela Round;
+  font-size: 32px;
+  position: absolute;
+  left: 20px;
+  right: 75.68%;
+  top: 3%;
+  bottom: 50.37%;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 45px;
+}
+
+/* Rectangle 5 */
+#content_rectangle2 {
+  position: absolute;
+  height: 250px;
+  width: 650px;
+  left: 1028px;
+  top: 30.19%;
+  border-radius: 3px;
+
+  background: #2c341d;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+a {
+  text-decoration: none;
+}
+/* Login and Signup Buttons */
+#buttons_wrapper {
+  position: absolute;
+  top: 20px;
+  height: 100px;
+  width: 100px;
+}
+.login_button,
+.signup_button {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #2c341d;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 15px 50px;
+  margin: 0 auto;
+  width: 100px;
+  border: solid;
+  border-color: #2c341d;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: Codec Cold Trial;
+  transition: all 0.5 sec ease;
+}
+.login_button {
+  position: absolute;
+  right: 90px;
+  top: 85px;
+}
+.signup_button {
+  top: 85px;
+  position: absolute;
+  right: 300px;
+}
+/* Work on Transitions */
+.login_button:hover {
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.5s;
+  background-position: right bottom;
+
+  background: linear-gradient(to left, transparent 50%, #333 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+/* FRESH BREWED COFFEE TO START YOUR DAY ON A HIGH! */
+#content2 {
+  position: absolute;
+  width: 400px;
+  height: 110px;
+  left: 10px;
+  top: 30px;
+
+  font-family: Codec Cold Trial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: left;
+
+  color: #e9e3b4;
+}
+
+#content3 {
+  position: absolute;
+  width: 427px;
+  height: 66px;
+
+  left: 10px;
+  top: 115px;
+  border-radius: nullpx;
+
+  font-family: Codec Cold Trial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #e9e3b4;
+}
+.coffee_cup {
+  position: absolute;
+  width: 230px;
+  height: 175px;
+  right: 25px;
+  top: 15px;
+  background-image: url(/Assets/Untitled.svg);
+}
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 769px;
+height: 408px;
+
+background: url(IcedTea.png);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+/* Rectangle 8 */
+
+position: absolute;
+width: 748px;
+height: 408px;
+
+background: #b7caf6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* DELIGHTFULLY CHILL */
+
+position: absolute;
+width: 486px;
+height: 60px;
+
+font-family: Quicksand;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 60px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+
+/* Refresh your day with the bright, tropical flavors of our Lemon Punch and Vanilla Swirl */
+
+position: absolute;
+width: 472px;
+height: 132px;
+
+font-family: Quantico;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 34px;
+text-align: center;
+
+color: #183b63;
+
+/* THE BANDO */
+#header_parent {
+  width: 571px;
+  left: calc(50% - 571px / 2 - 0.5px);
+  top: 2.41%;
+
+  background-color: #4c2e05;
+}
+#header_text {
+  font-family: Ailerons;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 87px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 10px;
+
+  color: #000000;
+}
+/* Coffee & Beverage House */
+#subheader_parent {
+  position: absolute;
+  left: 41.25%;
+  right: 42.29%;
+  top: 100px;
+  bottom: 88.52%;
+  padding-top: 15px;
+  margin-top: 0px;
+}
+#subheader_text {
+  font-family: Codec Cold Trial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #000000;
+}
