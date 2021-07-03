@@ -6,38 +6,35 @@ html {
 
 /* Fonts declaration  */
 
-
 @font-face {
-  font-family: 'Aileron';
-  src: url('/Assets/Fonts/Aileron-Regular.woff2') format('woff2'),
-      url('/Assets/Fonts/Aileron-Regular.woff') format('woff'),
-      url('/Assets/Fonts/Aileron-Regular.ttf') format('truetype');
+  font-family: "Aileron";
+  src: url("/Assets/Fonts/Aileron-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/Aileron-Regular.woff") format("woff"),
+    url("/Assets/Fonts/Aileron-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Codec Cold Trial';
-  src: url('/Assets/Fonts/CodecColdTrial-Regular.woff2') format('woff2'),
-      url('/Assets/Fonts/CodecColdTrial-Regular.woff') format('woff'),
-      url('/Assets/Fonts/CodecColdTrial-Regular.ttf') format('truetype');
+  font-family: "Codec Cold Trial";
+  src: url("/Assets/Fonts/CodecColdTrial-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/CodecColdTrial-Regular.woff") format("woff"),
+    url("/Assets/Fonts/CodecColdTrial-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Varela Round';
-  src: url('/Assets/Fonts/VarelaRound-Regular.woff2') format('woff2'),
-      url('/Assets/Fonts/VarelaRound-Regular.woff') format('woff'),
-      url('/Assets/Fonts/VarelaRound-Regular.ttf') format('truetype');
+  font-family: "Varela Round";
+  src: url("/Assets/Fonts/VarelaRound-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/VarelaRound-Regular.woff") format("woff"),
+    url("/Assets/Fonts/VarelaRound-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-
-
 
 /* Banner 1 */
 #banner1 {
@@ -65,11 +62,10 @@ html {
   line-height: 30px;
   text-align: center;
   padding-top: 20px;
-  margin-top: 0px; 
+  margin-top: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
 
   color: #e9e3b4;
 }
@@ -80,7 +76,7 @@ html {
 
 #main_banner {
   width: 100vw;
-  height: 164px; 
+  height: 164px;
   margin-top: 0px;
   top: 0px;
   left: 0px;
@@ -125,8 +121,8 @@ html {
   color: #4c2e05;
 }
 
-/* GIFT CARDS */
-#gift_button {
+/* ABOUT */
+#about_button {
   position: absolute;
   left: 18.28%;
   right: 65.42%;
@@ -153,15 +149,14 @@ html {
   height: 61px;
 
   position: absolute;
-  left: 1060px;
+  left: 70vw;
   right: 20px;
   top: 45px;
   bottom: 89.54%;
 }
 #find_a_store {
   position: absolute;
-  left: 71.56%;
-  right: 175px;
+  left: 73vw;
   top: 58px;
   bottom: 89.91%;
 
@@ -185,15 +180,14 @@ html {
   height: 61px;
 
   position: absolute;
-  right: 145px;
+  right: 15vw;
   top: 50px;
   bottom: 89.54%;
 }
 
 #cart1 {
   position: absolute;
-  left: 1280px;
-  right: 0px;
+  right: 10vw;
   top: 58px;
   bottom: 89.63%;
 
@@ -350,63 +344,12 @@ a {
   background-image: url(/Assets/Untitled.svg);
 }
 
-/* Rectangle 7 */
-
-position: absolute;
-width: 769px;
-height: 408px;
-
-background: url(IcedTea.png);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-/* Rectangle 8 */
-
-position: absolute;
-width: 748px;
-height: 408px;
-
-background: #b7caf6;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-/* DELIGHTFULLY CHILL */
-
-position: absolute;
-width: 486px;
-height: 60px;
-
-font-family: Quicksand;
-font-style: normal;
-font-weight: bold;
-font-size: 48px;
-line-height: 60px;
-/* identical to box height */
-
-text-align: center;
-
-color: #000000;
-
-/* Refresh your day with the bright, tropical flavors of our Lemon Punch and Vanilla Swirl */
-
-position: absolute;
-width: 472px;
-height: 132px;
-
-font-family: Quantico;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 34px;
-text-align: center;
-
-color: #183b63;
-
 /* THE BANDO */
 #header_parent {
   width: 571px;
   left: calc(50% - 571px / 2 - 0.5px);
   top: 2.41%;
-
-  background-color: #4c2e05;
+  position: absolute;
 }
 #header_text {
   font-family: Ailerons;
@@ -423,13 +366,13 @@ color: #183b63;
 /* Coffee & Beverage House */
 #subheader_parent {
   position: absolute;
-  left: 41.25%;
+  left: 40.25%;
   right: 42.29%;
   top: 90px;
   bottom: 88.52%;
   padding-top: 0px;
-  margin-top: 0px;
-  width: 250px;
+  margin-top: 10px;
+  width: 400px;
 }
 #subheader_text {
   font-family: Codec Cold Trial;
@@ -438,6 +381,7 @@ color: #183b63;
   font-size: 24px;
   line-height: 30px;
   text-align: center;
+  justify-self: center;
 
   color: #000000;
 }
