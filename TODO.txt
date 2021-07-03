@@ -1,0 +1,3 @@
+1. Menu Link in the top page goes to a menu below the fold
+2. Location goes to a map below the fold 
+3. Bottom Bar
