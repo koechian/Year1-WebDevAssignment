@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/CSS/index.css" />
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="/JS/index.js"></script>
     <link rel="icon" href="/Assets/favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +17,7 @@
         <a href="#" id="menu_button">Menu</a>
         <a href="#" id="about_button">About</a>
         <a href="#" id="location_img"></a>
-        <a href="#" id="find_a_store">Find a Store</a>
+        <a href="#" id="find_a_store">Find a Bistro</a>
         <a href="#" id="cart1">Cart</a>
         <a href="#" id="cart_logo"></a>
         <div id="header_parent">
@@ -28,7 +29,7 @@
       </div>
       <div id="banner1">
         <h1 id="announcement">
-          Facial Coverings are a requirement in all our stores. <br />
+          Facial Coverings are a requirement in all our bistros. <br />
           <a
             id="learn"
             target="_blank"
@@ -38,7 +39,66 @@
         </h1>
       </div>
     </section>
-    <section id="Footer">
+    <section class="Mid">
+      <div id="cover_text">
+        <span><h1 id="coffee_love">meals with a hint of love</h1></span>
+        <hr class="solid" />
+        <div id="text_box">
+          <p id="main_text">
+            We now deliver!!<br />
+            <br />We have teamed up with our friends from Uber Eats to offer
+            delivery service to Nairobi,Kajiado and Rongai Areas! Now you can
+            get your fresh hot coffee and breakfast, lunch, or early dinner
+            delivered straight to your home or office! We are also able to
+            deliver along with your food order...<br /><br />Anything from
+            traditional coffee for breakfast to a selection of our beers, gins,
+            or bottled wines for that kind of morning. If you want it we'll
+            serve it. <br />*Alcohol must be served along with food and person
+            ordering must be 18 or older. <br /><br />Ordering through our app
+            is still available if you are in the area and would like to just
+            stop in to pick it up.
+          </p>
+          <span id="sub_text">looking foward to serving you soon :) </span>
+          <br /><br /><br /><br /><br /><br />
+        </div>
+        <span> <a id="delivery" href="#">Order for Delivery</a> </span>
+        <span> <a id="pickup" href="#">Order for Pickup</a> </span>
+        <br /><br /><br />
+
+        <hr class="solid" />
+
+        <div class="menu_container">
+          <h1 id="menu_title"><span>LE MENU</span></h1>
+
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'to_eat')">
+              To Eat
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'to_drink')">
+              To Drink
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'special_offers')">
+              Special Offers & Combos
+            </button> 
+          </div>
+
+          <!-- Tab content -->
+          <div id="to_eat" class="tabcontent">
+            <h3>Our Bread</h3>
+            <p>London is the capital city of England.</p>
+          </div>
+
+          <div id="to_drink" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+          <div id="special_offers" class="tabcontent">
+            <h3>Cappucinno, Glazed Waffle and Ham</h3>
+            <p>A small cup of white coffee with complements </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="Footer">
       <div class="bottom">
         <div>
           <a
@@ -71,17 +131,6 @@
           All Rights Reserved</span
         >
       </div>
-    </section>
-    <section class="Mid">
-      <div id="cover_1">
-        <img
-          id="coverpng"
-          src="/Assets/mario-ibrahimi-2RrAct0Rf8E-unsplash.jpg"
-          alt=""
-          width="500px"
-          height="300px"
-        />
-      </div>
-    </section>
+    </section> -->
   </body>
 </html>

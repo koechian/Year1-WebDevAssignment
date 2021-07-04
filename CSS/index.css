@@ -1,7 +1,7 @@
 /* SuperContainer */
 html {
   padding: none;
-  background: #ffff;
+  background: hsl(0, 0%, 100%);
 }
 
 /* Fonts declaration  */
@@ -67,7 +67,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 
-  color: #e9e3b4;
+  color: #ffff;
 }
 #learn {
   text-decoration: none;
@@ -81,6 +81,7 @@ html {
   top: 0px;
   left: 0px;
   position: fixed;
+  z-index: 3;
 
   background: #e9e3b4;
 }
@@ -248,7 +249,7 @@ html {
   margin-bottom: 0px;
   left: 0px;
   height: 10vh;
-  position: fixed;
+  position: absolute;
   bottom: 0px;
   background: #2c341d;
 }
@@ -287,4 +288,96 @@ html {
 }
 .Mid {
   position: absolute;
+  top: 28vh;
+  width: 99vw;
+  background: #ffff;
+}
+#cover_text {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Oswald;
+  width: 1100px;
+  margin-left: 400px;
+  position: absolute;
+}
+#coffee_love {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+hr.solid {
+  border-top: 5px solid;
+  color: #ffbf46;
+  width: 150px;
+}
+#main_text,
+#sub_text {
+  font-family: Varela Round;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  left: 50vh;
+  line-height: 25px;
+  color: #302b27;
+  margin-bottom: 20px;
+}
+#delivery,
+#pickup {
+  border: solid;
+  border-radius: 20px;
+  height: 20px;
+  width: 100px;
+  text-decoration: none;
+  padding: 15px;
+  margin: 10px;
+  color: #ffff;
+  background: #2c341d;
+  font-family: Varela Round;
+}
+#menu_container {
+  position: absolute;
+}
+#menu_title {
+  font-family: Ailerons;
+  font-size: 50px;
+  font-weight: 600;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: #e9e3b4;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background: #e9e3b4;
+  font-family: Varela Round;
+  color: ffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #2c341d;
+  color: #e9e3b4;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #aaa95a;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  background-color: #f7f3de;
+  border-top: none;
+  text-align: left;
+  font-family: RM Typerighter;
 }
