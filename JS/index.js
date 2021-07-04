@@ -1,3 +1,4 @@
+document.getElementById('eat_button').click();
 function openTab(evt, food) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -17,4 +18,6 @@ function openTab(evt, food) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(food).style.display = "block";
     evt.currentTarget.className += " active";
+    
 }
+

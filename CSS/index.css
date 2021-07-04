@@ -353,6 +353,7 @@ hr.solid {
 .tab button {
   background: #e9e3b4;
   font-family: Varela Round;
+  font-size: 17px;
   color: ffff;
   border: none;
   outline: none;
@@ -379,5 +380,11 @@ hr.solid {
   background-color: #f7f3de;
   border-top: none;
   text-align: left;
-  font-family: RM Typerighter;
+  font-family: Varela Round;
+  font-size: 15px;
+}
+#coffee_list,
+#tea_list {
+  list-style: none;
+  line-height: 25px;
 }
