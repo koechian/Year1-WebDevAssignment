@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Aileron";
+  src: url("/Assets/Fonts/Aileron-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/Aileron-Regular.woff") format("woff"),
+    url("/Assets/Fonts/Aileron-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Codec Cold Trial";
+  src: url("/Assets/Fonts/CodecColdTrial-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/CodecColdTrial-Regular.woff") format("woff"),
+    url("/Assets/Fonts/CodecColdTrial-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Varela Round";
+  src: url("/Assets/Fonts/VarelaRound-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/VarelaRound-Regular.woff") format("woff"),
+    url("/Assets/Fonts/VarelaRound-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("/Assets/Fonts/Oswald-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/Oswald-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+}
+
+.login_container {
+  width: 1600px;
+  height: 450px;
+  background-color: rgba(35, 35, 26, 1);
+  border-radius: 20px;
+  position: absolute;
+  left: 10vw;
+  bottom: 30vh;
+  backdrop-filter: blur(20px);
+  font-family: Codec Cold Trial;
+  font-size: 20px;
+  color: #ffff;
+}
+
+.login_box {
+  width: 600px;
+  height: 550px;
+  background-color: rgba(250, 255, 253, 0.9);
+  position: fixed;
+  right: 10vw;
+  bottom: 27vh;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+html {
+  background: #e9e3b4;
+}
+#text {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+#text1 {
+  font-family: Varela Round;
+  font-size: 15px;
+  margin-left: 20px;
+  line-height: 30px;
+}
+#sign {
+  text-decoration: none;
+  height: 50px;
+  width: 140px;
+  border-radius: 2px;
+  background-color: #e9e3b4;
+  position: relative;
+  left: 300px;
+  font-size: 20px;
+  margin-top: 60px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#sign:hover {
+  background-color: #758e4f;
+  color: white;
+}
+.bottom {
+  top: 907px;
+  background-color: rgb(35, 35, 26);
+}
