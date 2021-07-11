@@ -96,7 +96,7 @@ html {
   color: white;
 }
 .bottom {
-  top: 907px;
+  top: 90vh;
   background-color: rgb(35, 35, 26);
 }
 #login_text {
