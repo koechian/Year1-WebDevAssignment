@@ -106,6 +106,10 @@ html {
   font-size: 50px;
   text-align: center;
 }
+#login_box hr {
+  width: 30%;
+  display: inline-block;
+}
 #password,
 #username {
   margin-top: 20px;
@@ -137,9 +141,9 @@ html {
 }
 #login_submit {
   margin-top: 40px;
-  margin-left: 400px;
+  margin-left: 10px;
   height: 50px;
-  width: 140px;
+  width: 575px;
   border: none;
   background: #758e4f;
   text-transform: uppercase;
@@ -152,4 +156,22 @@ html {
 #login_submit:hover {
   color: #ffff;
   background-color: rgb(35, 35, 26);
+}
+#connect_text {
+  text-align: center;
+  font-family: Varela Round;
+}
+#twitter_login_page,
+#google,
+#github {
+  position: absolute;
+}
+#google {
+  left: 15vw;
+}
+#twitter_login_page {
+  left: 8vw;
+}
+#github {
+  left: 22vw;
 }

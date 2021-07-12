@@ -49,10 +49,10 @@ html {
   position: absolute;
   left: 14.48%;
   right: 12.5%;
-  top: 13.33%;
+  top: 16%;
   bottom: 73.15%;
 
-  background: #4c2e05;
+  background: rgba(76, 46, 5, 1);
   border-radius: 7px;
   z-index: -1;
 }
@@ -96,7 +96,8 @@ html {
   position: fixed;
   z-index: 3;
 
-  background: #e9e3b4;
+  background: rgba(233, 227, 180, 0.5);
+  backdrop-filter: blur(30px);
 }
 
 /* Logo */
