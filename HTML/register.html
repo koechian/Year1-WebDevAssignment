@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="/CSS/register.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join Us</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="signup_box">
+        <h1 id="create">Create an Account</h1>
+        <span id="create_sub"
+          >Already have an account? <a href="/HTML/login.html">Sign in</a></span
+        >
+        <div id="email_field">
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <br />
+        <div id="first_names">
+          <label for="first_name">Name</label>
+          <input id="first_name" type="text" />
+        </div>
+        <div id="second_names">
+          <label for="second_name">Other Names</label>
+          <input id="second_name" type="text" />
+        </div>
+        <div id="passwords">
+          <label for="password">Create a Password</label>
+          <input type="password" />
+        </div>
+        <div id="DOB">
+          <label for="month_selector">Month of Birth</label>
+          <select name="Month of Birth" id="month_selector">
+            <option value="Jan">January</option>
+            <option value="Feb">February</option>
+            <option value="March">March</option>
+            <option value="Apr">April</option>
+            <option value="May">May</option>
+            <option value="Jun">June</option>
+            <option value="Jul">July</option>
+            <option value="Aug">August</option>
+            <option value="Sep">September</option>
+            <option value="Oct">October</option>
+            <option value="Nov">November</option>
+            <option value="Dec">December</option>
+          </select>
+        </div>
+        <div id="date">
+          <label for="date">Date</label>
+          <input id="date_input" type="number" min="1" max="31" />
+        </div>
+        <div id="year">
+          <label for="year">Year</label>
+          <input id="year_input" type="number" />
+        </div>
+        <div id="area_select">
+          <label for="area">Select Your Area</label>
+          <select name="area" id="area">
+            <option value="Rongai">Rongai</option>
+            <option value="Langata">Langata</option>
+            <option value="Ngong">Ngong</option>
+            <option value="Ngong">Ngong Road</option>
+            <option value="Karen">Karen</option>
+            <option value="South_C">South C</option>
+            <option value="CBD">CBD</option>
+            <option value="Kitengela">Kitengela</option>
+            <option value="Embakasi">Embakasi</option>
+            <option value="Madaraka">Madaraka</option>
+            <option value="Westands">Westands</option>
+          </select>
+        </div>
+        <div id="signup_button">
+          <button class="join">JOIN US!</button>
+        </div>
+        <div id="text1">
+          <p>
+            The Bando Coffee and Beverage House may keep me informed with
+            personalized emails about products and services. <br /><br />See our
+            Privacy Policy for more details or to opt-out at any time.
+          </p>
+        </div>
+        <div id="text2">
+          <input id="radio" type="checkbox" />
+          <label id="contactme">Please contact me via Email</label>
+        </div>
+        <div id="text3">
+          <p>
+            By clicking Create account, I agree that I have read and accepted
+            the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a>
+          </p>
+        </div>
+      </div>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+    </div>
+  </body>
 </html>

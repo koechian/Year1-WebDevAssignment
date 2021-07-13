@@ -1,11 +1,26 @@
 /* SuperContainer */
 html {
   padding: none;
-  background: hsl(0, 0%, 100%);
 }
 
 /* Fonts declaration  */
+@font-face {
+  font-family: "Maven Pro";
+  src: url("/Assets/Fonts/MavenProRegular.woff2") format("woff2"),
+    url("/Assets/Fonts/MavenProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Red Rose";
+  src: url("/Assets/Fonts/RedRose-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/RedRose-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 @font-face {
   font-family: "Aileron";
   src: url("/Assets/Fonts/Aileron-Regular.woff2") format("woff2"),

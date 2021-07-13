@@ -1,0 +1,256 @@
+@font-face {
+  font-family: "Aileron";
+  src: url("/Assets/Fonts/Aileron-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/Aileron-Regular.woff") format("woff"),
+    url("/Assets/Fonts/Aileron-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Maven Pro";
+  src: url("/Assets/Fonts/MavenProRegular.woff2") format("woff2"),
+    url("/Assets/Fonts/MavenProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Rose";
+  src: url("/Assets/Fonts/RedRose-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/RedRose-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Codec Cold Trial";
+  src: url("/Assets/Fonts/CodecColdTrial-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/CodecColdTrial-Regular.woff") format("woff"),
+    url("/Assets/Fonts/CodecColdTrial-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Varela Round";
+  src: url("/Assets/Fonts/VarelaRound-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/VarelaRound-Regular.woff") format("woff"),
+    url("/Assets/Fonts/VarelaRound-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("/Assets/Fonts/Oswald-Regular.woff2") format("woff2"),
+    url("/Assets/Fonts/Oswald-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e9e3b4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup_box {
+  position: absolute;
+  backdrop-filter: blur(40px);
+  border-radius: 10px;
+  min-height: 700px;
+  min-width: 700px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 8;
+  display: block;
+}
+.circle1,
+.circle2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(127, 176, 105, 0.5);
+  z-index: 1;
+  border-radius: 300px;
+  position: absolute;
+}
+.circle1 {
+  top: 5px;
+  right: 491px;
+}
+
+.circle2 {
+  bottom: 3px;
+  left: 498px;
+}
+#create {
+  font-family: Red Rose;
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: #1b2223;
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+#create_sub {
+  font-family: Maven Pro;
+  font-size: 16px;
+  margin-left: 45px;
+  margin-top: 10px;
+  color: #424b54;
+}
+#email_field {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: Maven Pro;
+}
+input {
+  border: none;
+  border-bottom: solid rgba(71, 89, 92, 0.6) 1.5px;
+  background-color: transparent;
+  width: 300px;
+  font-family: Maven Pro;
+  font-size: 16px;
+  transition: 0.5s ease;
+}
+input:focus,
+input:hover {
+  outline: none;
+  border: none;
+  border-bottom: solid rgba(187, 68, 48, 0.8) 3px;
+  transition: ease;
+}
+#first_names {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+#second_names {
+  position: absolute;
+  top: 200px;
+  right: 20px;
+}
+#passwords {
+  position: absolute;
+  top: 300px;
+  left: 20px;
+}
+#DOB {
+  position: absolute;
+  top: 293px;
+  right: 220px;
+}
+select {
+  margin-top: 0;
+  height: 30px;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: solid rgba(71, 89, 92, 0.6) 1.5px;
+  font-family: Maven Pro;
+  font-size: 14px;
+  transition: 0.5s ease-out;
+}
+select:hover,
+select:focus {
+  border-bottom: solid rgba(187, 68, 48, 0.8) 2px;
+  transition: ease-in;
+}
+#date {
+  position: absolute;
+  top: 293px;
+  right: 175px;
+}
+#date_input,
+#year_input {
+  width: 60px;
+  position: absolute;
+  top: 36px;
+  font-family: Maven Pro;
+}
+#year {
+  position: absolute;
+  top: 293px;
+  right: 90px;
+}
+#area_select {
+  position: absolute;
+  top: 400px;
+  left: 20px;
+}
+#area {
+  width: 300px;
+}
+#text1 {
+  position: absolute;
+  top: 500px;
+  right: 20px;
+  margin-left: 20px;
+  font-family: Maven Pro;
+  font-size: 14px;
+}
+#text2 {
+  position: absolute;
+  top: 600px;
+  left: 20px;
+  margin-left: 20px;
+  font-family: Maven Pro;
+  font-size: 14px;
+}
+#radio {
+  position: absolute;
+  margin: 0;
+  width: fit-content;
+}
+#contactme {
+  position: relative;
+  left: 40px;
+}
+#text3 {
+  position: absolute;
+  top: 620px;
+  left: 20px;
+  margin-left: 0px;
+  font-family: Maven Pro;
+  font-size: 14px;
+}
+#signup_button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 400px;
+  right: 20px;
+  width: 300px;
+  height: 100px;
+}
+.join {
+  padding: none;
+  outline: none;
+  background: #b14b2f;
+  border: none;
+  color: #ffff;
+  width: 250px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: Varela Round;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.join:hover {
+  background: #e7560d;
+}
