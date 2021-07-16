@@ -87,6 +87,9 @@ a {
 html {
   background: #e9e3b4;
 }
+body {
+  margin: 0;
+}
 #text {
   margin-top: 100px;
   margin-left: 20px;
@@ -194,4 +197,12 @@ html {
 }
 #github {
   left: 22vw;
+}
+.navbar {
+  display: flex;
+  background: #ccc08f;
+}
+.navbar a {
+  color: red;
+  font: Varela Round bold 20px;
 }
