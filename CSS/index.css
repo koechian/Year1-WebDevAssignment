@@ -1,65 +1,7 @@
-/* SuperContainer */
 html {
   padding: none;
 }
 
-/* Fonts declaration  */
-@font-face {
-  font-family: "Maven Pro";
-  src: url("/Assets/Fonts/MavenProRegular.woff2") format("woff2"),
-    url("/Assets/Fonts/MavenProRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Red Rose";
-  src: url("/Assets/Fonts/RedRose-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/RedRose-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Aileron";
-  src: url("/Assets/Fonts/Aileron-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/Aileron-Regular.woff") format("woff"),
-    url("/Assets/Fonts/Aileron-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Codec Cold Trial";
-  src: url("/Assets/Fonts/CodecColdTrial-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/CodecColdTrial-Regular.woff") format("woff"),
-    url("/Assets/Fonts/CodecColdTrial-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Varela Round";
-  src: url("/Assets/Fonts/VarelaRound-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/VarelaRound-Regular.woff") format("woff"),
-    url("/Assets/Fonts/VarelaRound-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Oswald";
-  src: url("/Assets/Fonts/Oswald-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/Oswald-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Banner 1 */
 #banner1 {
   position: absolute;
   left: 14.48%;
@@ -115,7 +57,6 @@ html {
   backdrop-filter: blur(30px);
 }
 
-/* Logo */
 #logo_container {
   position: absolute;
   left: 2vw;
@@ -131,47 +72,38 @@ html {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* MENU */
-#login {
+#main_banner a {
   position: absolute;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 0px;
+  font-family: Advent Pro;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4c2e05;
+  transition: 0.3s;
+}
+#main_banner a:hover {
+  color: #bc3908;
+}
+#login {
   left: 12.97%;
   right: 79.32%;
   top: 58px;
   bottom: 89.63%;
-
-  font-family: Codec Cold Trial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 35px;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 0px;
-
-  color: #4c2e05;
 }
 
-/* ABOUT */
 #about_button {
-  position: absolute;
   left: 18.28%;
   right: 65.42%;
   top: 58px;
   bottom: 89.35%;
-
-  font-family: Codec Cold Trial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 35px;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 0px;
-
-  color: #4c2e05;
 }
 
-/* Find a Store */
 #location_img {
   background: url(/Assets/location.svg);
   background-repeat: no-repeat;
@@ -185,54 +117,27 @@ html {
   bottom: 89.54%;
 }
 #find_a_store {
-  position: absolute;
   left: 73vw;
   top: 58px;
   bottom: 89.91%;
-
-  font-family: Codec Cold Trial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 30px;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 0px;
-
-  color: #4c2e05;
 }
 
-/* Cart */
 #cart_logo {
   background: url(/Assets/shoppingcart.svg);
   background-repeat: no-repeat;
   width: 41px;
   height: 61px;
 
-  position: absolute;
   right: 15vw;
   top: 50px;
   bottom: 89.54%;
 }
 
 #cart1 {
-  position: absolute;
   right: 10vw;
   top: 58px;
   bottom: 89.63%;
-
-  font-family: Codec Cold Trial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 30px;
-  text-align: center;
-  text-decoration: none;
-  padding-top: 0px;
-
-  color: #4c2e05;
 }
-/* THE BANDO */
 #header_parent {
   width: 571px;
   left: calc(50% - 571px / 2 - 0.5px);
@@ -251,7 +156,7 @@ html {
 
   color: #000000;
 }
-/* Coffee & Beverage House */
+
 #subheader_parent {
   position: absolute;
   left: 40.25%;
@@ -379,14 +284,13 @@ hr.solid {
   font-size: 50px;
   font-weight: 600;
 }
-/* Style the tab */
+
 .tab {
   overflow: hidden;
   border: none;
   background-color: #e9e3b4;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
   background: #e9e3b4;
   font-family: Varela Round;
@@ -399,18 +303,15 @@ hr.solid {
   transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #2c341d;
   color: #e9e3b4;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #aaa95a;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: none;
   padding: 6px 12px;

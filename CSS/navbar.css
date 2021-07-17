@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  background: #ccc08f;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar ul {
+  list-style: none;
+  justify-content: space-around;
+}
+.navbar li {
+  display: inline-block;
+  margin-left: 60px;
+}
+.navbar a {
+  letter-spacing: 2px;
+  font-family: Advent Pro;
+  font-size: 20px;
+  font-weight: 800;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  color: #364224;
+}
+.navbar a:hover {
+  color: #bc3908;
+}

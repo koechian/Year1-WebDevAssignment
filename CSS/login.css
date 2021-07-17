@@ -1,56 +1,3 @@
-@font-face {
-  font-family: "Aileron";
-  src: url("/Assets/Fonts/Aileron-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/Aileron-Regular.woff") format("woff"),
-    url("/Assets/Fonts/Aileron-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Maven Pro";
-  src: url("/Assets/Fonts/MavenProRegular.woff2") format("woff2"),
-    url("/Assets/Fonts/MavenProRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Red Rose";
-  src: url("/Assets/Fonts/RedRose-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/RedRose-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Codec Cold Trial";
-  src: url("/Assets/Fonts/CodecColdTrial-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/CodecColdTrial-Regular.woff") format("woff"),
-    url("/Assets/Fonts/CodecColdTrial-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Varela Round";
-  src: url("/Assets/Fonts/VarelaRound-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/VarelaRound-Regular.woff") format("woff"),
-    url("/Assets/Fonts/VarelaRound-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Oswald";
-  src: url("/Assets/Fonts/Oswald-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/Oswald-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 * {
   padding: 0;
 }
@@ -116,7 +63,12 @@ body {
 }
 #sign:hover {
   background-color: #758e4f;
-  color: white;
+}
+#sign a {
+  transition: 0.3s;
+}
+#sign a:hover {
+  color: #ffff;
 }
 .bottom {
   top: 90vh;
@@ -162,6 +114,9 @@ body {
   text-transform: uppercase;
   font-family: Varela Round;
 }
+#reset:hover {
+  text-decoration: underline;
+}
 #login_submit {
   margin-top: 40px;
   margin-left: 10px;
@@ -197,12 +152,4 @@ body {
 }
 #github {
   left: 22vw;
-}
-.navbar {
-  display: flex;
-  background: #ccc08f;
-}
-.navbar a {
-  color: red;
-  font: Varela Round bold 20px;
 }
