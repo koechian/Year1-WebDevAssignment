@@ -1,6 +1,0 @@
-1. Menu Link in the top page goes to a menu below the fold
-2. Location goes to a map below the fold 
-3. Bottom Bar
-4.on hover for a tags in Register page 
-5. move to php
-6. back button on login page 

@@ -1,11 +1,13 @@
 body {
   margin: 0;
 }
+
 .under {
   height: 40vh;
   width: 100vw;
   background: #ccc08f;
 }
+
 img {
   position: absolute;
   height: 450px;
@@ -15,6 +17,7 @@ img {
   box-shadow: 20px;
   border-radius: 14px;
 }
+
 .under h1 {
   position: absolute;
   left: 32vw;
@@ -23,6 +26,7 @@ img {
   font-size: 70px;
   letter-spacing: 10px;
 }
+
 .text {
   position: absolute;
 
@@ -33,6 +37,7 @@ img {
   text-align: center;
   font-family: Varela Round;
 }
+
 article {
   text-transform: none;
   font-size: 17px;
@@ -40,21 +45,25 @@ article {
   line-height: 20px;
   color: #291720;
 }
+
 article > p > span {
   font-style: italic;
   font-weight: bold;
   color: black;
 }
+
 hr {
   border-top: 5px solid #f75c03;
   width: 45%;
 }
+
 .mapouter {
   position: relative;
   text-align: right;
   height: 500px;
   width: 600px;
 }
+
 .gmap_canvas {
   overflow: hidden;
   background: none !important;

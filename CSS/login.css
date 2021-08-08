@@ -1,6 +1,7 @@
 * {
   padding: 0;
 }
+
 a {
   text-decoration: none;
   color: #364224;
@@ -34,19 +35,23 @@ a {
 html {
   background: #e9e3b4;
 }
+
 body {
   margin: 0;
 }
+
 #text {
   margin-top: 100px;
   margin-left: 20px;
 }
+
 #text1 {
   font-family: Varela Round;
   font-size: 15px;
   margin-left: 20px;
   line-height: 30px;
 }
+
 #sign {
   text-decoration: none;
   height: 50px;
@@ -61,19 +66,24 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
+
 #sign:hover {
   background-color: #758e4f;
 }
+
 #sign a {
   transition: 0.3s;
 }
+
 #sign a:hover {
   color: #ffff;
 }
+
 .bottom {
   top: 90vh;
   background-color: rgb(35, 35, 26);
 }
+
 #login_text {
   font-family: Red Rose;
   color: rgb(35, 35, 26);
@@ -81,10 +91,12 @@ body {
   font-size: 50px;
   text-align: center;
 }
+
 #login_box hr {
   width: 30%;
   display: inline-block;
 }
+
 #password,
 #username {
   margin-top: 20px;
@@ -100,12 +112,14 @@ body {
   transition: 1s;
   transition-timing-function: ease;
 }
+
 #password:focus,
 #username:focus {
   border-bottom: solid 1.5px;
   overflow-x: inherit;
   width: 90%;
 }
+
 #reset {
   margin-left: 20px;
   color: #364224;
@@ -114,9 +128,11 @@ body {
   text-transform: uppercase;
   font-family: Varela Round;
 }
+
 #reset:hover {
   text-decoration: underline;
 }
+
 #login_submit {
   margin-top: 40px;
   margin-left: 10px;
@@ -131,25 +147,42 @@ body {
   color: rgb(35, 35, 26);
   transition: 0.3s;
 }
+
 #login_submit:hover {
   color: #ffff;
   background-color: rgb(35, 35, 26);
 }
+
 #connect_text {
   text-align: center;
   font-family: Varela Round;
 }
+
 #twitter_login_page,
 #google,
-#github {
+#github,
+#admin {
   position: absolute;
 }
+
 #google {
-  left: 15vw;
+  left: 11vw;
 }
+
 #twitter_login_page {
-  left: 8vw;
+  left: 4vw;
 }
+
 #github {
-  left: 22vw;
+  left: 18vw;
+}
+
+#admin {
+  left: 25vw;
+}
+
+.invalid-feedback {
+  font-family: Red Rose;
+  font-size: 15px;
+  position: absolute;
 }

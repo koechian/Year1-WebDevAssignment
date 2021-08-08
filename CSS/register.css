@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+
 .container {
   height: 100vh;
   width: 100vw;
@@ -20,6 +21,7 @@ body {
   z-index: 8;
   display: block;
 }
+
 .circle1,
 .circle2 {
   width: 300px;
@@ -29,6 +31,7 @@ body {
   border-radius: 300px;
   position: absolute;
 }
+
 .circle1 {
   top: 5px;
   right: 491px;
@@ -38,6 +41,7 @@ body {
   bottom: 3px;
   left: 498px;
 }
+
 #create {
   font-family: Red Rose;
   letter-spacing: 2px;
@@ -47,6 +51,7 @@ body {
   margin-top: 40px;
   margin-bottom: 0;
 }
+
 #create_sub {
   font-family: Maven Pro;
   font-size: 16px;
@@ -54,10 +59,17 @@ body {
   margin-top: 10px;
   color: #424b54;
 }
+
 #email_field {
   position: absolute;
-  margin-top: 20px;
-  margin-left: 20px;
+  top: 120px;
+  right: 20px;
+}
+
+#username {
+  position: absolute;
+  top: 120px;
+  left: 20px;
 }
 
 label {
@@ -65,6 +77,7 @@ label {
   margin-bottom: 10px;
   font-family: Maven Pro;
 }
+
 input {
   border: none;
   border-bottom: solid rgba(71, 89, 92, 0.6) 1.5px;
@@ -74,6 +87,7 @@ input {
   font-size: 16px;
   transition: 0.5s ease;
 }
+
 input:focus,
 input:hover {
   outline: none;
@@ -81,26 +95,25 @@ input:hover {
   border-bottom: solid rgba(187, 68, 48, 0.8) 3px;
   transition: ease;
 }
+
 #first_names {
   position: absolute;
   top: 200px;
   left: 20px;
 }
+
 #second_names {
   position: absolute;
   top: 200px;
   right: 20px;
 }
+
 #passwords {
   position: absolute;
   top: 300px;
   left: 20px;
 }
-#DOB {
-  position: absolute;
-  top: 293px;
-  right: 220px;
-}
+
 select {
   margin-top: 0;
   height: 30px;
@@ -112,36 +125,23 @@ select {
   font-size: 14px;
   transition: 0.5s ease-out;
 }
+
 select:hover,
 select:focus {
   border-bottom: solid rgba(187, 68, 48, 0.8) 2px;
   transition: ease-in;
 }
-#date {
-  position: absolute;
-  top: 293px;
-  right: 175px;
-}
-#date_input,
-#year_input {
-  width: 60px;
-  position: absolute;
-  top: 36px;
-  font-family: Maven Pro;
-}
-#year {
-  position: absolute;
-  top: 293px;
-  right: 90px;
-}
+
 #area_select {
   position: absolute;
   top: 400px;
   left: 20px;
 }
+
 #area {
   width: 300px;
 }
+
 #text1 {
   position: absolute;
   top: 500px;
@@ -150,6 +150,7 @@ select:focus {
   font-family: Maven Pro;
   font-size: 14px;
 }
+
 #text2 {
   position: absolute;
   top: 600px;
@@ -158,15 +159,18 @@ select:focus {
   font-family: Maven Pro;
   font-size: 14px;
 }
+
 #radio {
   position: absolute;
   margin: 0;
   width: fit-content;
 }
+
 #contactme {
   position: relative;
   left: 40px;
 }
+
 #text3 {
   position: absolute;
   top: 620px;
@@ -175,6 +179,7 @@ select:focus {
   font-family: Maven Pro;
   font-size: 14px;
 }
+
 #signup_button {
   position: absolute;
   display: flex;
@@ -185,6 +190,7 @@ select:focus {
   width: 300px;
   height: 100px;
 }
+
 .join {
   padding: none;
   outline: none;
@@ -198,6 +204,7 @@ select:focus {
   font-size: 20px;
   transition: 0.5s;
 }
+
 .join:hover {
   background: #e7560d;
 }

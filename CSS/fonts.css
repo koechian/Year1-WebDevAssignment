@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Aileron";
-  src: url("/Assets/Fonts/Aileron-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/Aileron-Regular.woff") format("woff"),
-    url("/Assets/Fonts/Aileron-Regular.ttf") format("truetype");
+  src: url("../Assets\Fonts\AdventPro-Regular.woff2") format("woff2"),
+    url("../Assets\Fonts\AdventPro-Regular.woff") format("woff"),
+    url("../Assets\Fonts\Aileron-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Advent Pro";
-  src: url("/Assets/Fonts/AdventPro-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/AdventPro-Regular.woff") format("woff");
+  src: url("../Assets\Fonts\AdventPro-Regular.woff2") format("woff2"),
+    url("../Assets\Fonts\Aileron-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: "Maven Pro";
-  src: url("/Assets/Fonts/MavenProRegular.woff2") format("woff2"),
-    url("/Assets/Fonts/MavenProRegular.woff") format("woff");
+  src: url("../Assets\Fonts\MavenProRegular.woff2") format("woff2"),
+    url("../Assets\Fonts\MavenProRegular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,17 +27,17 @@
 
 @font-face {
   font-family: "Red Rose";
-  src: url("/Assets/Fonts/RedRose-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/RedRose-Regular.woff") format("woff");
+  src: url("../Assets\Fonts\RedRose-Regular.woff2") format("woff2"),
+    url("../Assets\Fonts\RedRose-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Codec Cold Trial";
-  src: url("/Assets/Fonts/CodecColdTrial-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/CodecColdTrial-Regular.woff") format("woff"),
-    url("/Assets/Fonts/CodecColdTrial-Regular.ttf") format("truetype");
+  src: url("../Assets\Fonts\CodecColdTrial-Regular.woff2") format("woff2"),
+    url("../Assets\Fonts\CodecColdTrial-Regular.woff") format("woff"),
+    url("../Assets\Fonts\CodecColdTrial-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -45,17 +45,17 @@
 
 @font-face {
   font-family: "Varela Round";
-  src: url("/Assets/Fonts/VarelaRound-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/VarelaRound-Regular.woff") format("woff"),
-    url("/Assets/Fonts/VarelaRound-Regular.ttf") format("truetype");
+  src: url("../Assets\Fonts\VarelaRound-Regular.woff2") format("woff2"),
+    url("../Assets\Fonts\VarelaRound-Regular.woff") format("woff"),
+    url("../Assets\Fonts\VarelaRound-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("/Assets/Fonts/Oswald-Regular.woff2") format("woff2"),
-    url("/Assets/Fonts/Oswald-Regular.woff") format("woff");
+  src: url("../Assets\Fonts\Oswald-Regular.woff2") format("woff2"),
+    url("../Assets\Fonts\Oswald-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

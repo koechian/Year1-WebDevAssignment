@@ -13,6 +13,7 @@ html {
   border-radius: 7px;
   z-index: -1;
 }
+
 #announcement {
   position: absolute;
   left: 26.35%;
@@ -34,11 +35,13 @@ html {
 
   color: #ffff;
 }
+
 #learn {
   text-decoration: none;
   color: #758e4f;
   transition: 0.3s;
 }
+
 #learn:hover {
   text-decoration: underline;
   color: #e9e3b4;
@@ -67,7 +70,7 @@ html {
   width: 200px;
   padding-top: 1rem;
 
-  background: url(/Assets/Ellipse\ 1.svg);
+  background: url(../Assets/Images/Ellipse\ 1.svg);
   background-repeat: no-repeat;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -87,9 +90,11 @@ html {
   color: #4c2e05;
   transition: 0.3s;
 }
+
 #main_banner a:hover {
   color: #bc3908;
 }
+
 #login {
   left: 12.97%;
   right: 79.32%;
@@ -105,7 +110,7 @@ html {
 }
 
 #location_img {
-  background: url(/Assets/location.svg);
+  background: url(../Assets/Images/location.svg);
   background-repeat: no-repeat;
   width: 41px;
   height: 61px;
@@ -116,6 +121,7 @@ html {
   top: 45px;
   bottom: 89.54%;
 }
+
 #find_a_store {
   left: 73vw;
   top: 58px;
@@ -123,7 +129,7 @@ html {
 }
 
 #cart_logo {
-  background: url(/Assets/shoppingcart.svg);
+  background: url(../Assets/Images/shoppingcart.svg);
   background-repeat: no-repeat;
   width: 41px;
   height: 61px;
@@ -138,12 +144,14 @@ html {
   top: 58px;
   bottom: 89.63%;
 }
+
 #header_parent {
   width: 571px;
   left: calc(50% - 571px / 2 - 0.5px);
   top: 2.41%;
   position: absolute;
 }
+
 #header_text {
   font-family: Ailerons;
   font-size: 90px;
@@ -167,6 +175,7 @@ html {
   margin-top: 10px;
   width: 400px;
 }
+
 #subheader_text {
   font-family: Codec Cold Trial;
   font-style: normal;
@@ -178,6 +187,7 @@ html {
 
   color: #000000;
 }
+
 .bottom {
   width: 100vw;
   margin-bottom: 0px;
@@ -188,6 +198,7 @@ html {
   bottom: 0px;
   background: #2c341d;
 }
+
 #bottom_text {
   font-family: Arial;
   font-size: 19px;
@@ -196,11 +207,13 @@ html {
   margin-top: 30px;
   position: absolute;
 }
+
 .iconify {
   width: 24px;
   height: 24px;
   color: #e9e3b4;
 }
+
 #twitter,
 #insta,
 #youtube {
@@ -208,25 +221,31 @@ html {
   cursor: pointer;
   top: 30px;
 }
+
 #insta {
   left: 85vw;
 }
+
 #twitter {
   left: 80vw;
 }
+
 #youtube {
   left: 90vw;
 }
+
 #cover1 {
   top: 50vh;
   left: 20vh;
 }
+
 .Mid {
   position: absolute;
   top: 28vh;
   width: 99vw;
   background: #ffff;
 }
+
 #cover_text {
   text-align: center;
   text-transform: uppercase;
@@ -236,16 +255,19 @@ html {
   position: absolute;
   top: -20px;
 }
+
 #coffee_love {
   margin-top: 50px;
   margin-bottom: 30px;
   font-size: 30px;
 }
+
 hr.solid {
   border-top: 5px solid;
   color: #ffbf46;
   width: 150px;
 }
+
 #main_text,
 #sub_text {
   font-family: Varela Round;
@@ -257,6 +279,7 @@ hr.solid {
   color: #302b27;
   margin-bottom: 20px;
 }
+
 #delivery,
 #pickup {
   border: none;
@@ -271,14 +294,17 @@ hr.solid {
   font-family: Varela Round;
   transition: 0.3s;
 }
+
 #delivery:hover,
 #pickup:hover {
   background: #e9e3b4;
   color: #000000;
 }
+
 #menu_container {
   position: absolute;
 }
+
 #menu_title {
   font-family: Ailerons;
   font-size: 50px;
@@ -321,6 +347,7 @@ hr.solid {
   font-family: Varela Round;
   font-size: 15px;
 }
+
 #coffee_list,
 #tea_list {
   list-style: none;

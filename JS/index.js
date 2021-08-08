@@ -1,5 +1,6 @@
-
-document.getElementById('eat_button').click()
+document.addEventListener('DOMContentLoaded', function () {
+document.getElementById('eat_button').click();
+})
 function openTab(evt, food) {
   
     var i, tabcontent, tablinks;
