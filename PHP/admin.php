@@ -8,11 +8,12 @@ $foodname = mysqli_real_escape_string($link, $foodname);
 $newprice = $_POST['newprice'];
 $newquantity = $_POST['newquantity'];
 $upindex = $_POST['foodindex'];
+$usrindex = $_POST['userindex'];
 
 $ins = "INSERT INTO foods(food_name,price,quantity)VALUES('$foodname','$price','$quantity')";
 $change = "UPDATE foods SET price=$newprice,quantity=$newquantity WHERE id=$upindex";
 $delete = "DELETE FROM `foods` WHERE `foods`.`id` = $upindex";
-
+$deleteusr = "DELETE FROM `users` WHERE `users`.`id` = $usrindex";
 
 
 
@@ -35,6 +36,13 @@ if (isset($_POST['change'])) {
 if (isset($_POST['delete'])) {
     if (mysqli_query($link, $delete)) {
         echo "<script>alert('The record has been deleted')</script>";
+    } else {
+        echo "Failed!" . mysqli_error($link);
+    }
+}
+if (isset($_POST['deleteusr'])) {
+    if (mysqli_query($link, $deleteusr)) {
+        echo "<script>alert('The user has been deleted')</script>";
     } else {
         echo "Failed!" . mysqli_error($link);
     }
@@ -127,7 +135,7 @@ if (isset($_POST['delete'])) {
                     }
                 }
             } else {
-                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                echo "5 ERROR: Could not able to execute $sql. " . mysqli_error($link);
             }
             ?>
 
@@ -152,6 +160,16 @@ if (isset($_POST['delete'])) {
             <input placeholder="Quantity in Stock" name="newquantity" type="int"><br><br><br>
             <input value="Change in Database" name="change" type="submit">
             <input value="Delete from Database" name="delete" type="submit">
+
+        </form>
+    </div>
+    <div id="deleting_users">
+        <form action="" method="POST">
+            <h3>Delete existing Users by Index</h3>
+
+            <input placeholder="Index" name="userindex" type="int"><br>
+            <br><br><br>
+            <input value="Delete" name="deleteusr" type="submit">
 
         </form>
     </div>

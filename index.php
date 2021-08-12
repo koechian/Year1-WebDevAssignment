@@ -1,14 +1,15 @@
  <?php
 
-  // session_start();
+  include('PHP/login.php');
 
 
-  // if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-  //   header("location: login.php");
-  //   exit;
-  //}
+  if (($_SESSION['usr'] == null)) {
+    header("location: HTML\login.html");
+  }
+  $temp_user = $_SESSION['usr'];
+  $cur_user = trim($temp_user, '\'"');
+
   ?>
-
  <!DOCTYPE html>
  <html lang="en">
 
@@ -19,7 +20,7 @@
    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
    <script src="JS\index.js"></script>
    <link rel="icon" href="Assets\Images\favicon.ico" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta http-equiv="X-UA-Compatible" content="uft-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>The Bando Coffee House</title>
  </head>
@@ -28,11 +29,18 @@
    <section id="Header">
      <div id="main_banner">
        <div id="logo_container"></div>
-       <a href="PHP\login.php" id="login">Login</a>
-       <a href="PHP\about.php" id="about_button">About</a>
-       <a href="PHP\about.php" id="location_img"></a>
-       <a href="PHP\about.php" id="find_a_store">Find a Bistro</a>
-       <a href="PHP\admin.php" id="cart1">Cart</a>
+       <a href="PHP\profile.php" id="login">
+         <?php
+          print <<<GFG
+        $cur_user;
+        GFG;
+          ?>
+       </a>
+
+       <a href="HTML\about.html" id="about_button">About</a>
+       <a href="HTML\about.html" id="location_img"></a>
+       <a href="HTML\about.html" id="find_a_store">Find a Bistro</a>
+       <a href="PHP\admin.php" id="cart1">Order</a>
        <a href="#" id="cart_logo"></a>
        <div id="header_parent">
          <h1 id="header_text">THE BANDO</h1>
