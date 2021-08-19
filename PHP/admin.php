@@ -64,13 +64,17 @@ if (isset($_POST['deleteusr'])) {
 </head>
 
 <body>
-    <div id="topbar">
+    <div id="side_bar">
         <form action="" method="get">
-            <input id="button1" name="get_foods" value="Display Foods" type="submit">
-            <form action="" method="get">
-                <input id="button2" name="get_users" value="Display Users" type="submit">
+            <input id="button1" name="get_foods" value="Display Foods" type="submit"><br><br><br>
 
-            </form>
+            <input id="button2" name="get_users" value="Display Users" type="submit"><br><br><br>
+            <input id="button3" name="crud" value="Create and Edit" type="submit">
+
+        </form>
+
+    </div>
+    <div id="topbar">
 
     </div>
     <div id="data_disp">
@@ -108,24 +112,25 @@ if (isset($_POST['deleteusr'])) {
                 $sql = "SELECT * FROM users";
                 if ($result = mysqli_query($link, $sql)) {
                     if (mysqli_num_rows($result) > 0) {
-                        echo "<table>";
+                        echo "<table align='center' cellspacing='10'>";
                         echo "<tr>";
                         echo "<th>Index</th>";
                         echo "<th>Names</th>";
-                        echo "<th>Email</th>";
                         echo "<th>Username</th>";
                         echo "<th>Password</th>";
                         echo "<th>Date of Birth</th>";
                         echo "<th>Area of Residence</th>";
+                        echo "<th colspan='2'>Action</th>";
                         echo "</tr>";
                         while ($row = mysqli_fetch_array($result)) {
-                            echo "<tr>";
+                            echo "<tr align='center'>";
                             echo "<td>" . $row['id'] . "</td>";
                             echo "<td>" . $row['names'] . "</td>";
                             echo "<td>" . $row['username'] . "</td>";
                             echo "<td>" . $row['password'] . "</td>";
                             echo "<td>" . $row['dob'] . "</td>";
                             echo "<td>" . $row['area'] . "</td>";
+                            echo "<td><a href='admin.php?delete=<?php echo $row['id'];?>'>Edit</a></td>";
                             echo "</tr>";
                         }
 
@@ -135,41 +140,9 @@ if (isset($_POST['deleteusr'])) {
                     }
                 }
             } else {
-                echo "5 ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
             }
             ?>
-
-        </form>
-    </div>
-    <div id="adding">
-        <form action="" method="POST">
-            <h3>Add new food here</h3>
-
-            <input placeholder="Food Name" name="foodname" type="text"><br><br> <br>
-            <input placeholder="Price" name="price" type="int"><br><br><br>
-            <input placeholder="Quantity in Stock" name="quantity" type="int"><br><br><br>
-            <input value="Add to Database" name="add" type="submit">
-        </form>
-    </div>
-    <div id="editing">
-        <form action="" method="POST">
-            <h3>Edit existing Records by Index</h3>
-
-            <input placeholder="Index" name="foodindex" type="int"><br><br> <br>
-            <input placeholder="Price" name="newprice" type="int"><br><br><br>
-            <input placeholder="Quantity in Stock" name="newquantity" type="int"><br><br><br>
-            <input value="Change in Database" name="change" type="submit">
-            <input value="Delete from Database" name="delete" type="submit">
-
-        </form>
-    </div>
-    <div id="deleting_users">
-        <form action="" method="POST">
-            <h3>Delete existing Users by Index</h3>
-
-            <input placeholder="Index" name="userindex" type="int"><br>
-            <br><br><br>
-            <input value="Delete" name="deleteusr" type="submit">
 
         </form>
     </div>
@@ -177,9 +150,3 @@ if (isset($_POST['deleteusr'])) {
 </body>
 
 </html>
-
-<script>
-    if (window.history.replaceState) {
-        window.history.replaceState(null, null, window.location.href);
-    }
-</script>

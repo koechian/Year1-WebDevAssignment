@@ -6,8 +6,7 @@
   if (($_SESSION['usr'] == null)) {
     header("location: HTML\login.html");
   }
-  $temp_user = $_SESSION['usr'];
-  $cur_user = trim($temp_user, '\'"');
+
 
   ?>
  <!DOCTYPE html>
@@ -31,9 +30,7 @@
        <div id="logo_container"></div>
        <a href="PHP\profile.php" id="login">
          <?php
-          print <<<GFG
-        $cur_user;
-        GFG;
+          echo $_SESSION['usr'];
           ?>
        </a>
 

@@ -1,0 +1,105 @@
+#top-bar {
+  background-color: #ccc08f;
+  height: 15vh;
+}
+body {
+  padding: none;
+  margin: 0;
+}
+#username-cont {
+  width: 50vw;
+  position: absolute;
+  background-color: #002500;
+  height: 200px;
+  left: 500px;
+  margin: 0;
+  top: 150px;
+  box-shadow: 0px 20px 20px #1a2123;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+#bod {
+  height: 600px;
+  width: 50vw;
+  position: absolute;
+  background-color: #ece7d5;
+  left: 500px;
+  top: 350px;
+  margin: 0;
+  box-shadow: 0px 20px 20px #1a2123;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#userimg {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 100px;
+  border-radius: 50px;
+}
+#username-disp {
+  position: absolute;
+  margin-top: 80px;
+  text-transform: uppercase;
+  margin-left: 300px;
+  color: white;
+}
+#logout-btn {
+  right: 30px;
+  margin-top: 60px;
+  top: 20px;
+}
+#upload-btn {
+  right: 200px;
+  margin-top: 60px;
+  top: 20px;
+}
+#logout-btn,
+#upload-btn {
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 100px;
+  text-decoration: none;
+  padding: 15px;
+  color: #ffff;
+  background: #2c341d;
+  font-family: Varela Round;
+  transition: 0.3s;
+}
+
+#logout-bnt:hover,
+#upload-btn:hover {
+  background: #e9e3b4;
+  color: #000000;
+}
+#data {
+  position: absolute;
+}
+#uploads {
+  position: absolute;
+  top: 140px;
+  right: 42px;
+  width: fit-content;
+
+  color: white;
+}
+#header_parent {
+  width: 571px;
+  left: calc(50% - 571px / 2 - 0.5px);
+  top: 2.41%;
+  position: absolute;
+  margin-top: 17px;
+}
+#header_text {
+  font-family: Ailerons;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 87px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 10px;
+
+  color: #000000;
+}
