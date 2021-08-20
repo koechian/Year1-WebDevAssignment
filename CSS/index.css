@@ -58,6 +58,7 @@ html {
 
   background: rgba(233, 227, 180, 0.5);
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 
 #logo_container {
