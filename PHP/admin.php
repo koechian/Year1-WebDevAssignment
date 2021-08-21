@@ -41,22 +41,25 @@ $pageid = 0;
                 $sql = "SELECT * FROM foods";
                 if ($result = mysqli_query($link, $sql)) {
                     if (mysqli_num_rows($result) > 0) {
-                        echo "<table>";
+                        echo "<table cellspacing='5' align='center'>";
                         echo "<tr>";
                         echo "<th>Index</th>";
                         echo "<th>Food Name</th>";
                         echo "<th>Price</th>";
-                        echo "<th>Quantity in Stock</th>";
+                        echo "<th>Stock</th>";
+                        echo "<th colspace='2'>Action</th>";
+                        echo "<th>Caption</th>";
                         echo "</tr>";
                         while ($row = mysqli_fetch_array($result)) {
                             $tempid = $row['id'];
-                            echo "<tr>";
+                            echo "<tr align='center'>";
                             echo "<td>" . $row['id'] . "</td>";
                             echo "<td>" . $row['food_name'] . "</td>";
                             echo "<td>" . $row['price'] . "</td>";
                             echo "<td>" . $row['quantity'] . "</td>";
                             echo "<td> <button><a href='update.php?updateid=$tempid'>Update</a></button>
                             <button><a href='delete.php?deleteid=$tempid'>Delete</a></button></td>";
+                            echo "<td>" . $row['caption'] . "</td>";
 
                             echo "</tr>";
                         }
@@ -105,8 +108,7 @@ $pageid = 0;
 
             ?>
 
-
-            <button name='new'><a href='new.php'>Insert Record</a></button>
+            <button name='new'><a href='new.php'>Insert New Record</a></button>
 
 
 

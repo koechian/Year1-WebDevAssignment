@@ -93,10 +93,10 @@
            <button id="eat_button" class="tablinks" onclick="openTab(event, 'to_eat')">
              To Eat
            </button>
-           <button class="tablinks" onclick="openTab(event, 'to_drink')">
+           <button id="drink_button" class="tablinks" onclick="openTab(event, 'to_drink')">
              To Drink
            </button>
-           <button class="tablinks" onclick="openTab(event, 'special_offers')">
+           <button id="offer_button" class="tablinks" onclick="openTab(event, 'special_offers')">
              Special Offers & Combos
            </button>
          </div>
@@ -105,95 +105,109 @@
          <div id="to_eat" class="tabcontent">
            <?php
             $sql = "SELECT * FROM foods";
+            $to_eat = array();
+            $to_eat_prices = array();
+            $to_eat_caption = array();
             $result = mysqli_query($link, $sql);
-            $row = mysqli_fetch_assoc($result);
+            $x = 0;
+
+            while ($row = mysqli_fetch_assoc($result)) {
+
+              $to_eat[$x] = $row['food_name'];
+              $to_eat_prices[$x] = $row['price'];
+              $to_eat_caption[$x] = $row['caption'];
+              $x++;
+            }
             ?>
 
-           <h3><?php echo $row['food_name'] ?></h3>
-           <p>8 Freshly baked pastries of your choice. <br>(Ksh1200)</p>
+           <h3><?php echo $to_eat[0] ?></h3>
+           <p><?php echo $to_eat_caption[0] ?> <br>(Ksh<?php echo " " . $to_eat_prices[0] ?>)</p>
            <br>
-           <h3>Cookie Box Bundle</h3>
-           <p>A seletion of 3 whole wheat cookies with toppings of your choice. <br> (Ksh 200)</p>
+           <h3><?php echo $to_eat[1] ?></h3>
+           <p><?php echo $to_eat_caption[1] ?><br> (Ksh<?php echo " " . $to_eat_prices[1] ?>)</p>
            <br>
-           <h3>Bread</h3>
-           <p>A loaf of Freshly Baked whole wheat bread. Severd either white or whole grain [400 grams of greatness] <br> (Ksh 70)</p>
+           <h3><?php echo $to_eat[2] ?></h3>
+           <p><?php echo $to_eat_caption[2] ?> <br> (Ksh<?php echo " " . $to_eat_prices[2] ?>)</p>
            <br>
-           <h3>Pies</h3>
-           <p>Anything goes. If you can think it up, we can serve it.<br> (Ksh 250)</p>
+           <h3><?php echo $to_eat[3] ?></h3>
+           <p><?php echo $to_eat_caption[3] ?><br> (Ksh<?php echo " " . $to_eat_prices[3] ?>)</p>
            <br>
-           <h3>Slab Cakes</h3>
-           <p>Choose between three trademark flavors. Red Velvet, Dark Forest and Strawberry Crumble<br> (Ksh 200)</p>
-           ?>
+           <h3><?php echo $to_eat[4] ?></h3>
+           <p><?php echo $to_eat_caption[4] ?><br> (Ksh<?php echo " " . $to_eat_prices[4] ?>)</p>
+
          </div>
 
          <div id="to_drink" class="tabcontent">
            <h3>Coffee</h3>
            <p>All coffee sizes are the same and a cup retails for Ksh 200</p>
            <ul id="coffee_list">
-             <li>Americano</li>
-             <li>Caffe Latte</li>
-             <li>Vanilla Latte</li>
-             <li>Mocha</li>
-             <li>Hot Chocolate</li>
-             <li>Cappuccino</li>
-             <li>latte macchiatto</li>
+             <li><?php echo $to_eat[5] ?></li>
+             <li><?php echo $to_eat[6] ?></li>
+             <li><?php echo $to_eat[7] ?></li>
+             <li><?php echo $to_eat[8] ?></li>
+             <li><?php echo $to_eat[9] ?></li>
+             <li><?php echo $to_eat[10] ?></li>
+             <li><?php echo $to_eat[11] ?></li>
            </ul>
            <h3>Teas</h3>
            <p>A glass is 300ml and retails at Ksh 120</p>
            <p>Flavours of your choice can be added at an extra cost</p>
            <ul id="tea_list">
-             <li>Green Tea</li>
-             <li>chai Latte</li>
-             <li>green tea and lemon grass</li>
-             <li>morrocan mint tea</li>
-             <li>kenyan tea</li>
+             <li><?php echo $to_eat[12] ?></li>
+             <li><?php echo $to_eat[13] ?></li>
+             <li><?php echo $to_eat[14] ?></li>
+             <li><?php echo $to_eat[15] ?></li>
+             <li><?php echo $to_eat[16] ?></li>
 
            </ul>
            <h3>Smoothies</h3>
            <p>Explore fruit combos you never knew existed!</p>
-           <h4>CLASSIC SMOOTHIES</h4>
+           <h4><?php echo $to_eat[17] ?></h4>
            <p>
-             Banana / Strawberry / Mango /Pineapple
-             <br>(Ksh 450)
+             <?php echo $to_eat_caption[17] ?>
+
+             <br>(Ksh<?php echo " " . $to_eat_prices[17] ?>)
            </p>
-           <h4>the weight watcher smoothie</h4>
+           <h4><?php echo $to_eat[18] ?></h4>
            <p>
-             Cucumber, Spinach, apple, lemon & Ginger
-             <br>(Ksh 450)
+             <?php echo $to_eat_caption[18] ?>
+             <br>(Ksh<?php echo " " . $to_eat_prices[18] ?>)
            </p>
-           <h4>mint twist</h4>
+           <h4><?php echo $to_eat[19] ?></h4>
            <p>
-             Mint, celery, avocado, spinach, basil, apple, honey & moringa
-             <br>(Ksh 450)
+             <?php echo $to_eat_caption[19] ?>
+             <br>(Ksh<?php echo " " . $to_eat_prices[19] ?>)
            </p>
-           <h4>indian madlad smoothie</h4>
+           <h4><?php echo $to_eat[20] ?></h4>
            <p>
-             Baobab powder, chia seeds, honey, banana,sweetmelon, passion juice & red chilli
-             <br>(Ksh 450)
+             <?php echo $to_eat_caption[20] ?>
+             <br>(Ksh<?php echo " " . $to_eat_prices[20] ?>)
            </p>
 
          </div>
          <div id="special_offers" class="tabcontent">
-           <h3>BREAKFAST CROISSANT</h3>
+           <h3><?php echo $to_eat[21] ?></h3>
            <p>
-             Two poached eggs, mustard, tomatoes, rocket leaves, cheese & served with fresh salad. <br>ADD: Bacon or Beef bacon 250/- Avocado 50/- Two Sausages 260/-<br>
-             (Ksh 690) </p>
-           <br>
-           <h3>FRENCH TOAST</h3>
-           <p>
-             Served with homemade jam, Mascarpone cheese & fresh fruit salad. <br> ADD: Bacon or Beef bacon 250/-<br>
-             (Ksh 690)
+             <?php echo $to_eat_caption[21] ?>
+             <br><br>*ADD: Bacon or Beef bacon 250/- Avocado 50/- Two Sausages 260/-<br>
+             (Ksh<?php echo " " . $to_eat_prices[21] ?>)
            </p>
            <br>
-           <h3>FRESHLY BAKED BREAD BASKET</h3>
-           <p>Served with butter & homemade jam<br>
-             Ksh 390
+           <h3><?php echo $to_eat[22] ?></h3>
+           <p>
+             <?php echo $to_eat_caption[22] ?> <br>
+             (Ksh <?php echo " " . $to_eat_prices[22] ?>)
            </p>
            <br>
-           <h3>MUESLI</h3>
+           <h3><?php echo $to_eat[23] ?></h3>
+           <p><?php echo $to_eat_caption[23] ?><br>
+             (Ksh <?php echo " " . $to_eat_prices[23] ?>)
+           </p>
+           <br>
+           <h3><?php echo $to_eat[24] ?></h3>
            <p>
-             Fresh fruit salad, granola, honey & yoghurt
-             <br>(Ksh 550)
+             <?php echo $to_eat_caption[24] ?>
+             <br>(Ksh <?php echo " " . $to_eat_prices[24] ?>)
            </p>
          </div>
        </div>

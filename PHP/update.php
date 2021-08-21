@@ -7,6 +7,7 @@ $id1 = $_GET['updateid'];
 $foodname = $_POST['foodname'];
 $price = $_POST['price'];
 $quantity = $_POST['quantity'];
+$caption = $_POST['caption'];
 
 $sql = "SELECT * FROM foods WHERE id=$id1";
 $result1 = mysqli_query($link, $sql);
@@ -15,9 +16,10 @@ $row = mysqli_fetch_assoc($result1);
 $old_foodname = $row['food_name'];
 $old_price = $row['price'];
 $old_quantity = $row['quantity'];
+$old_caption = $row['caption'];
 
 
-$updatefoods = "UPDATE foods SET id=$id1, food_name='$foodname',price=$price,quantity=$quantity WHERE id=$id1";
+$updatefoods = "UPDATE foods SET id=$id1, food_name='$foodname',price=$price,quantity=$quantity,caption='$caption' WHERE id=$id1";
 
 
 if (isset($_POST['edit'])) {
@@ -55,6 +57,8 @@ if (isset($_POST['edit'])) {
                 <input value="<?php echo $old_price ?>" name="price" type="number"><br><br>
                 <label for="quantity">Quantity</label>
                 <input value="<?php echo $old_quantity ?>" name="quantity" type="number"><br><br>
+                <label for="caption">Caption</label>
+                <input value="<?php echo $old_caption ?>" name="caption" type="text"><br><br>
                 <input name="edit" value="Change this Record" type="submit"><br><br><br><br>
                 <a href="admin.php">ADMIN PAGE</a>
         </div>
