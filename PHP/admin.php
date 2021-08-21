@@ -1,54 +1,8 @@
 <?php
 ini_set('display_errors', 0);
 include('connect.php');
-$foodname = $_POST['foodname'];
-$price = $_POST['price'];
-$quantity = $_POST['quantity'];
-$foodname = mysqli_real_escape_string($link, $foodname);
-$newprice = $_POST['newprice'];
-$newquantity = $_POST['newquantity'];
-$upindex = $_POST['foodindex'];
-$usrindex = $_POST['userindex'];
 
-$ins = "INSERT INTO foods(food_name,price,quantity)VALUES('$foodname','$price','$quantity')";
-$change = "UPDATE foods SET price=$newprice,quantity=$newquantity WHERE id=$upindex";
-$delete = "DELETE FROM `foods` WHERE `foods`.`id` = $upindex";
-$deleteusr = "DELETE FROM `users` WHERE `users`.`id` = $usrindex";
-
-
-
-if (isset($_POST['add'])) {
-    if (mysqli_query($link, $ins)) {
-        echo "<script>alert('The Data has been added')</script>";
-    } else {
-        echo "<script>alert('Data addition failed! . mysqli_error($link)')</script>";
-        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-    }
-}
-
-if (isset($_POST['change'])) {
-    if (mysqli_query($link, $change)) {
-        echo "<script>alert('The record has been updated')</script>";
-    } else {
-        echo "<script>alert('Update failed! . mysqli_error($link)')</script>";
-    }
-}
-if (isset($_POST['delete'])) {
-    if (mysqli_query($link, $delete)) {
-        echo "<script>alert('The record has been deleted')</script>";
-    } else {
-        echo "Failed!" . mysqli_error($link);
-    }
-}
-if (isset($_POST['deleteusr'])) {
-    if (mysqli_query($link, $deleteusr)) {
-        echo "<script>alert('The user has been deleted')</script>";
-    } else {
-        echo "Failed!" . mysqli_error($link);
-    }
-}
-
-
+$pageid = 0;
 
 ?>
 
@@ -69,12 +23,11 @@ if (isset($_POST['deleteusr'])) {
             <input id="button1" name="get_foods" value="Display Foods" type="submit"><br><br><br>
 
             <input id="button2" name="get_users" value="Display Users" type="submit"><br><br><br>
-            <input id="button3" name="crud" value="Create and Edit" type="submit">
-
         </form>
 
     </div>
     <div id="topbar">
+        <h1>Admin Dashboard</h1>
 
     </div>
     <div id="data_disp">
@@ -84,6 +37,7 @@ if (isset($_POST['deleteusr'])) {
             ini_set('display_errors', 0);
 
             if (isset($_GET['get_foods'])) {
+                $pageid = 1;
                 $sql = "SELECT * FROM foods";
                 if ($result = mysqli_query($link, $sql)) {
                     if (mysqli_num_rows($result) > 0) {
@@ -95,15 +49,19 @@ if (isset($_POST['deleteusr'])) {
                         echo "<th>Quantity in Stock</th>";
                         echo "</tr>";
                         while ($row = mysqli_fetch_array($result)) {
+                            $tempid = $row['id'];
                             echo "<tr>";
                             echo "<td>" . $row['id'] . "</td>";
                             echo "<td>" . $row['food_name'] . "</td>";
                             echo "<td>" . $row['price'] . "</td>";
                             echo "<td>" . $row['quantity'] . "</td>";
+                            echo "<td> <button><a href='update.php?updateid=$tempid'>Update</a></button>
+                            <button><a href='delete.php?deleteid=$tempid'>Delete</a></button></td>";
+
                             echo "</tr>";
                         }
 
-                        echo "</table>";
+                        echo "</table><br><br><br>";
                     } else {
                         echo "<script>alert('No records matching your query were found.')</script>";
                     }
@@ -112,6 +70,7 @@ if (isset($_POST['deleteusr'])) {
                 $sql = "SELECT * FROM users";
                 if ($result = mysqli_query($link, $sql)) {
                     if (mysqli_num_rows($result) > 0) {
+
                         echo "<table align='center' cellspacing='10'>";
                         echo "<tr>";
                         echo "<th>Index</th>";
@@ -123,6 +82,7 @@ if (isset($_POST['deleteusr'])) {
                         echo "<th colspan='2'>Action</th>";
                         echo "</tr>";
                         while ($row = mysqli_fetch_array($result)) {
+                            $tempid = $row['id'];
                             echo "<tr align='center'>";
                             echo "<td>" . $row['id'] . "</td>";
                             echo "<td>" . $row['names'] . "</td>";
@@ -130,8 +90,8 @@ if (isset($_POST['deleteusr'])) {
                             echo "<td>" . $row['password'] . "</td>";
                             echo "<td>" . $row['dob'] . "</td>";
                             echo "<td>" . $row['area'] . "</td>";
-                            echo "<td><a href='admin.php?delete=<?php echo $row['id'];?>'>Edit</a></td>";
-                            echo "</tr>";
+                            echo "<td> 
+                            <button><a href='delete.php?deleteid=$tempid'>Delete</a></button></td>";
                         }
 
                         echo "</table>";
@@ -142,9 +102,16 @@ if (isset($_POST['deleteusr'])) {
             } else {
                 echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
             }
+
             ?>
 
+
+            <button name='new'><a href='new.php'>Insert Record</a></button>
+
+
+
         </form>
+
     </div>
 
 </body>

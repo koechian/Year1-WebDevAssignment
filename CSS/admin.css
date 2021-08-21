@@ -38,6 +38,13 @@ body {
   padding: none;
   height: 10%;
 }
+#topbar h1{
+  position: absolute;
+  left: 3%;
+  top: -80%;
+  font-family: Space Age;
+  font-size: 60px;
+}
 
 #button1,
 #button2,#button3 {

@@ -27,7 +27,7 @@ if (isset($_POST['create'])) {
   if (mysqli_query($link, $sql)) {
     echo "<script>alert('Your account has been created!')</script>";
   } else {
-    echo "<script>alert('Account creation failed! . mysqli_error($link)')</script>";
+
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
   }
 }
@@ -51,7 +51,7 @@ if (isset($_POST['create'])) {
     <div class="signup_box">
 
       <h1 id="create">Create an Account</h1>
-      <span id="create_sub">Already have an account? <a href="login.php">Sign in</a></span>
+      <span id="create_sub">Already have an account? <a href="../HTML/login.html">Sign in</a></span>
       <form action="" method="post">
         <div id="username">
           <label for="username">Username</label>

@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 0);
 
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');

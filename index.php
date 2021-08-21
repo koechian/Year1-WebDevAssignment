@@ -1,6 +1,7 @@
  <?php
 
   include('PHP/login.php');
+  include('connect.php');
 
 
   if (($_SESSION['usr'] == null)) {
@@ -102,7 +103,13 @@
 
 
          <div id="to_eat" class="tabcontent">
-           <h3>Pastry Box</h3>
+           <?php
+            $sql = "SELECT * FROM foods";
+            $result = mysqli_query($link, $sql);
+            $row = mysqli_fetch_assoc($result);
+            ?>
+
+           <h3><?php echo $row['food_name'] ?></h3>
            <p>8 Freshly baked pastries of your choice. <br>(Ksh1200)</p>
            <br>
            <h3>Cookie Box Bundle</h3>
@@ -116,6 +123,7 @@
            <br>
            <h3>Slab Cakes</h3>
            <p>Choose between three trademark flavors. Red Velvet, Dark Forest and Strawberry Crumble<br> (Ksh 200)</p>
+           ?>
          </div>
 
          <div id="to_drink" class="tabcontent">

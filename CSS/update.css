@@ -1,0 +1,40 @@
+#insert_form{
+margin-top: 50px;
+display: block;
+margin: 10px;
+
+align-items: center;
+justify-content: center;
+}
+body {
+    margin: 0;
+    background-color: #f1faee;
+  }
+#form_cont_top{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 20%;
+    left: 40%;
+}
+#form_cont{
+    position: absolute;
+    left: 100px;
+}
+body{
+
+    align-items: center;
+    justify-content: center;
+}
+#insert_form input{
+    border-radius: 3px;
+    position: absolute;
+    align-self: center;
+    height:30px;
+    color: black;
+    font-size: large;
+}
+#insert_form label{
+    display: block;
+    margin-top:20px;
+}

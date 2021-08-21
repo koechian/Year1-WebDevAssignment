@@ -163,7 +163,7 @@ select:focus {
 #radio {
   position: absolute;
   margin: 0;
-  width: fit-content;
+  width:30px;
 }
 
 #contactme {

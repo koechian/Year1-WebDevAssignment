@@ -2,6 +2,8 @@
 include('login.php');
 include('connect.php');
 
+ini_set('display_errors', 0);
+
 
 $temp = $_SESSION['usr'];
 
