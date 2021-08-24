@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+.under h1{
+    left: 41vw !important;
+}
+#reciept_cont{
+    
+    width: 30vw;
+    height: 68vh;
+    position: absolute;
+    top: 25vh;
+    left: 37vw;
+    border-radius: 10px;
+    background-color: rgba(233, 227, 180, 0.5);
+    backdrop-filter: blur(20px);
+}
+#header{
+    text-align: center;
+}
+#header h2{
+    text-transform: uppercase;
+    font-family:Oswald ;
+    letter-spacing: 6px;
+    font-size: 45px;
+
+}

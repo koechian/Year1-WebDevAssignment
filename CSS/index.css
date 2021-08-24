@@ -146,6 +146,24 @@ html {
   bottom: 89.63%;
 }
 
+
+.notification .badge {
+position: absolute;
+top: -19px;
+right: -38px;
+padding: 5px 10px;
+border-radius: 100px;
+background-color: #F39B6D;
+color: white;
+width: 18px;
+height: 32px;
+}
+#noti_text{
+  position: absolute;
+  left: 13px;
+top: 3px;
+}
+
 #header_parent {
   width: 571px;
   left: calc(50% - 571px / 2 - 0.5px);
@@ -297,14 +315,40 @@ hr.solid {
 }
 
 #delivery:hover,
-#pickup:hover {
+#pickup:hover,#place_order:hover {
   background: #e9e3b4;
   color: #000000;
 }
 
-#menu_container {
+#order_selector{
   position: absolute;
+right: 60px;
+height: 30px;
+margin-top: 50px;
+
 }
+#order_selector input{
+  width: 100px;
+}
+#selector_data_cont{
+  display: grid;
+  width: 730px;
+}
+#place_order{
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+  color: #ffff;
+  background: #2c341d;
+  font-family: Varela Round;
+  transition: 0.3s;
+
+}
+
 
 #menu_title {
   font-family: Ailerons;
@@ -354,3 +398,5 @@ hr.solid {
   list-style: none;
   line-height: 25px;
 }
+
+

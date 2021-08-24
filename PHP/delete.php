@@ -25,7 +25,7 @@ if (isset($_GET['deleteid'])) {
     }
 } elseif ($pageid = 1) {
     if ($result1) {
-        echo "<script>alert('User Deleted')</script>";
+        echo "<script>alert('Food Deleted')</script>";
         header("location:admin.php");
     } else {
         die("ERROR: Could not delete. " . mysqli_connect_error($link));

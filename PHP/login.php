@@ -24,6 +24,8 @@ if (isset($_POST['login'])) {
 
     header("location:../index.php");
     $_SESSION['usr'] = $username;
+    $_SESSION['usr_id'] = $row['id'];
+    $_SESSION['count'];
   } else {
     header("location:../HTML\login.html");
   }
