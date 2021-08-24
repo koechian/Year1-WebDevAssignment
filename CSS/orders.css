@@ -25,3 +25,64 @@ body{
     font-size: 45px;
 
 }
+#hr1{
+    position: absolute;
+    top: 350px;
+    left: 152px;
+}
+#summary{
+    position: absolute;
+    margin-left: 20px;
+    bottom: 95px;
+}
+#summary hr{
+    border-top: 1px solid rgb(75, 74, 74);
+    position: absolute;
+    width: 450px;
+    left: 20px;
+    top: 124px;
+}
+#summary h3,h5{
+    font-family: Codec Cold Trial;
+    font-size: 20px;
+}
+#summary h5{
+    font-family: Fira Code;
+    font-size: 14px;
+    color: #565554;
+}
+#calc{
+    position: absolute;
+    right: 76px;
+    bottom: 93px;
+
+}
+#calc h5{
+    font-family: Fira Code;
+    font-size: 17px;
+}
+#reciept_text{
+    display: grid;
+    align-items: center;
+    
+}
+#reciept_text h3{
+    font-family: Advent Pro;
+    margin-left: 30px;
+    
+}
+table{
+    margin-left:20px ;
+    font:20px Maven Pro;
+    
+}
+td{
+    padding-left: 30px;
+}
+#clear{
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+    width: 150px !important;
+}
+

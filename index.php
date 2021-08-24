@@ -98,8 +98,8 @@
          <span id="sub_text">looking foward to serving you soon :) </span>
          <br /><br /><br /><br />
        </div>
-       <span> <a id="delivery" href="#">Order for Delivery</a> </span>
-       <span> <a id="pickup" href="#">Order for Pickup</a> </span>
+       <span> <a id="delivery" href="PHP/order.php">Order for Delivery</a> </span>
+       <span> <a id="pickup" href="PHP/order.php">Order for Pickup</a> </span>
        <br /><br /><br />
 
        <hr class="solid" />

@@ -1,10 +1,3 @@
-<?php
-
-include('connect.php');
-
-if (isset($_POST['place_order'])) {
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +7,7 @@ if (isset($_POST['place_order'])) {
     <link rel="shortcut icon" href="../Assets/Images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS\navbar.css">
     <link rel="stylesheet" href="../CSS\orders.css">
+    <link rel="stylesheet" href="../CSS\index.css">
     <link rel="stylesheet" href="../CSS\about.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Your Order</title>
@@ -37,7 +31,58 @@ if (isset($_POST['place_order'])) {
             <h2>Reciept</h2><br><br><br>
         </div>
         <div id="reciept_text">
-            <h3>Your Order of <?php ?></h3>
+            <?php
+
+            include('connect.php');
+            include('login.php');
+
+            $temp = $_SESSION['usr_id'];
+
+            $select = "SELECT * FROM  orders WHERE id =$temp";
+            $prices = array();
+            $x = 0;
+            if ($result = mysqli_query($link, $select)) {
+
+
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "<table cellspacing=5 align='left'>";
+                    echo "<tr align='left'>";
+                    echo "<td>" . $row['food_name'] . "</td>";
+                    echo "<td>" . $row['price'] . "</td>";
+                    echo "</tr>";
+                    $prices[$x] = $row['price'];
+                    $x++;
+                }
+                echo "</table>";
+            } else echo mysqli_error($link);
+            ?>
+        </div>
+        <hr id="hr1">
+        <div id="summary">
+            <h3>Subtotal</h3><br>
+            <h5>VAT(16%)</h5>
+            <h3>TOTAL</h3>
+            <hr>
+        </div>
+        <div id="calc">
+            <h5>Ksh <?php $pre_vat = array_sum($prices);
+                    $post_vat = $pre_vat * 1.16;
+                    echo $pre_vat ?></h5><br><br>
+            <h5>Ksh <?php echo $post_vat ?></h5>
+        </div>
+        <div id="clear_order">
+            <form action="" method="post">
+                <input value="Empty Basket" id="clear" name="reset" type="submit">
+            </form>
+            <?php
+            $reset = "DELETE FROM orders WHERE id =$temp";
+            if (isset($_POST['reset'])) {
+                if ($result = mysqli_query($link, $reset)) {
+                    header("location:order.php");
+                } else echo mysqli_error($link);
+            }
+
+            ?>
         </div>
 
 
