@@ -6,6 +6,7 @@ ini_set('display_errors', 1);
 
 
 $temp = $_SESSION['usr'];
+$tempid = $_SESSION['usr_id'];
 
 
 if (isset($_POST['logout'])) {
@@ -40,7 +41,7 @@ if (isset($_POST['logout'])) {
                         <li><a href="../index.php">Go Back</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="#about_pointer">Find A Bistro</a></li>
-                        <li><a href="#">Order Now</a></li>
+                        <li><a href="../index.php">Order Now</a></li>
                     </ul>
                 </nav>
                 <div id="header_parent">
@@ -95,21 +96,35 @@ if (isset($_POST['logout'])) {
             </div>
 
             <div id=bod>
-                <h3 id="data">
-                    <?php
+                <h3>Previous Orders</h3><br><br><br>
 
-                    $temp1 = $_SESSION['usr'];
-                    $get_data = "SELECT * FROM users WHERE id =$temp1";
+                <?php
+                $sql = "SELECT * FROM confirmed WHERE id=$tempid";
+                echo "<table cellspacing='60' align='center'>";
+                echo "<tr>";
+                echo "<th>Order Id</th>";
+                echo "<th>Food Name</th>";
+                echo "<th>Date Ordered</th>";
+                echo "</tr>";
 
-                    if ($data = mysqli_query($link, $get_data)) {
-
-                        while ($row = mysqli_fetch_array($data)) {
-                            echo $row['username'];
+                if ($result = mysqli_query($link, $sql)) {
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_array($result)) {
+                            echo "<tr align='center'>";
+                            echo "<td>" . $row['order_id'] . "</td>";
+                            echo "<td>" . $row['food_name'] . "</td>";
+                            echo "<td>" . $row['time_confirmed'] . "</td>";
+                            echo "</tr>";
                         }
-                    } ?></h3>
-
+                    }
+                } else {
+                    echo mysqli_error($link);
+                }
+                ?>
             </div>
+
         </div>
+    </div>
 
 </body>
 
