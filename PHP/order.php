@@ -40,6 +40,7 @@
 
             $select = "SELECT * FROM  orders WHERE id =$temp";
             $prices = array();
+            $foods_name = array();
             $x = 0;
             if ($result = mysqli_query($link, $select)) {
 
@@ -51,6 +52,7 @@
                     echo "<td>" . $row['price'] . "</td>";
                     echo "</tr>";
                     $prices[$x] = $row['price'];
+                    $foods_name[$x] = $row['food_name'];
                     $x++;
                 }
                 echo "</table>";
@@ -73,13 +75,27 @@
         <div id="clear_order">
             <form action="" method="post">
                 <input value="Empty Basket" id="clear" name="reset" type="submit">
+                <input value="Confirm Order" id="confirm" name="confirm" type="submit">
             </form>
             <?php
             $reset = "DELETE FROM orders WHERE id =$temp";
+
+
             if (isset($_POST['reset'])) {
                 if ($result = mysqli_query($link, $reset)) {
                     header("location:order.php");
                 } else echo mysqli_error($link);
+            }
+
+            if (isset($_POST['confirm'])) {
+
+                foreach ($foods_name as $value) {
+                    $confirm = "INSERT INTO confirmed(id,food_name)VALUE($temp,'$value')";
+
+                    if ($result = mysqli_query($link, $confirm) && $result = mysqli_query($link, $reset)) {
+                        header("location:order.php");
+                    } else echo mysqli_error($link);
+                }
             }
 
             ?>

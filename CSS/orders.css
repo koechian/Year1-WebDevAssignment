@@ -82,7 +82,13 @@ td{
 #clear{
     position: absolute;
     bottom: 20px;
-    left: 200px;
+    left: 90px;
+    width: 150px !important;
+}
+#confirm{
+    position: absolute;
+    bottom: 20px;
+    right: 90px;
     width: 150px !important;
 }
 
