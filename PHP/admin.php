@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 0);
+ini_set('display_errors', 1);
 include('connect.php');
 
 $pageid = 0;
@@ -23,6 +23,13 @@ $pageid = 0;
             <input id="button1" name="get_foods" value="Display Foods" type="submit"><br><br><br>
 
             <input id="button2" name="get_users" value="Display Users" type="submit"><br><br><br>
+
+            <input id="button3" name="get_orders" value="Display Orders" type="submit"><br><br><br><br><br><br><br><br><br>
+
+            <button id="button4"><a href="create_admin.php">Add new Admin</a></button><br><br><br><br>
+
+            <button id="button5" name='new'><a href='new.php'>Insert New Record</a></button>
+
         </form>
 
     </div>
@@ -102,13 +109,39 @@ $pageid = 0;
                         echo "<script>alert('No records matching your query were found.')</script>";
                     }
                 }
-            } else {
-                echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
             }
+            if (isset($_GET['get_orders'])) {
+                $pageid = 3;
+                $sql = "SELECT * FROM confirmed";
+                if ($result = mysqli_query($link, $sql)) {
+                    if (mysqli_num_rows($result) > 0) {
+                        echo "<table cellspacing='5' align='center'>";
+                        echo "<tr>";
+                        echo "<th>Order Id</th>";
+                        echo "<th>Customer Id</th>";
+                        echo "<th>Food Name</th>";
+                        echo "<th>Date Ordered</th>";
+                        echo "</tr>";
+                        while ($row = mysqli_fetch_array($result)) {
+                            $tempid = $row['id'];
+                            echo "<tr align='center'>";
+                            echo "<td>" . $row['order_id'] . "</td>";
+                            echo "<td>" . $row['id'] . "</td>";
+                            echo "<td>" . $row['food_name'] . "</td>";
+                            echo "<td>" . $row['time_confirmed'] . "</td>";
+                            echo "</tr>";
+                        }
 
+                        echo "</table><br><br><br>";
+                    } else {
+                        echo "<script>alert('No records matching your query were found.')</script>";
+                    }
+                }
+            }
             ?>
 
-            <button name='new'><a href='new.php'>Insert New Record</a></button>
+
+
 
 
 
