@@ -37,12 +37,16 @@ body {
   margin-left: 100px;
   border-radius: 50px;
 }
-#username-disp {
+#username_disp {
   position: absolute;
-  margin-top: 80px;
+  margin-top: 85px;
   text-transform: uppercase;
   margin-left: 300px;
   color: white;
+  font-family: Advent Pro ;
+  font-size: 40px;
+  letter-spacing: 7px;
+
 }
 #logout-btn {
   right: 30px;
@@ -60,7 +64,7 @@ body {
   border: none;
   border-radius: 5px;
   height: 50px;
-  width: 100px;
+  width: 110px;
   text-decoration: none;
   padding: 15px;
   color: #ffff;
