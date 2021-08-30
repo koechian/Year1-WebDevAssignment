@@ -272,7 +272,6 @@
                 ?>
              </div>
            </div>
-
          </div>
 
          <div id="to_drink" class="tabcontent">

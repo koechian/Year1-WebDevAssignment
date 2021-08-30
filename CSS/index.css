@@ -1,5 +1,6 @@
 html {
   padding: none;
+  scroll-behavior: smooth;
 }
 
 #banner1 {
@@ -183,7 +184,9 @@ top: 3px;
 
   color: #000000;
 }
-
+body{
+  margin:0;
+}
 #subheader_parent {
   position: absolute;
   left: 40.25%;
@@ -211,7 +214,7 @@ top: 3px;
 }
 
 .bottom {
-  width: 100vw;
+  width: 100%;
   margin-bottom: 0px;
   
   left: 0px; 
