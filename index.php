@@ -1,6 +1,6 @@
  <?php
 
-  session_start();
+  include('PHP/login.php');
   include('connect.php');
 
 
@@ -582,21 +582,21 @@
          </div>
        </div>
    </section>
-   <section id="Footer">
-     <div class="bottom">
-       <div>
-         <a id="twitter" target="blank" href="https://twitter.com/mwafrikaa_" title="Follow me on Twitter"><span class="iconify" data-icon="mdi-twitter"></span>
-         </a>
-       </div>
-       <div>
-         <a id="insta" href="#" title="No Insta :)"><span class="iconify" data-icon="akar-icons:instagram-fill"></span></a>
-       </div>
-       <div>
-         <a id="youtube" target="blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="My YouTube channel"><span class="iconify" data-icon="akar-icons:youtube-fill"></span></a>
-       </div>
-       <span id="bottom_text">The Bando Coffee House &nbsp | &nbsp All Rights Reserved</span>
-     </div>
-   </section>
  </body>
+ <section id="Footer">
+   <div class="bottom">
+     <div>
+       <a id="twitter" target="blank" href="https://twitter.com/mwafrikaa_" title="Follow me on Twitter"><span class="iconify" data-icon="mdi-twitter"></span>
+       </a>
+     </div>
+     <div>
+       <a id="insta" href="#" title="No Insta :)"><span class="iconify" data-icon="akar-icons:instagram-fill"></span></a>
+     </div>
+     <div>
+       <a id="youtube" target="blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="My YouTube channel"><span class="iconify" data-icon="akar-icons:youtube-fill"></span></a>
+     </div>
+     <span id="bottom_text">The Bando Coffee House &nbsp | &nbsp All Rights Reserved</span>
+   </div>
+ </section>
 
  </html>

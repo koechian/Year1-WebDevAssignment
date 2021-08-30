@@ -206,14 +206,17 @@ top: 3px;
 
   color: #000000;
 }
+#to_drink,#to_eat,#special_offers{
+  margin-bottom: 100px;
+}
 
 .bottom {
   width: 100vw;
   margin-bottom: 0px;
   
-  left: 0px;
-  height: 10vh;
-  position: absolute;
+  left: 0px; 
+  height: 6vh;
+  position: fixed;
   bottom: 0px;
   background: #2c341d;
 }
@@ -391,6 +394,7 @@ margin-top: 50px;
   text-align: left;
   font-family: Varela Round;
   font-size: 15px;
+
 }
 
 #coffee_list,
