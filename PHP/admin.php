@@ -1,8 +1,15 @@
 <?php
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 include('connect.php');
 
+session_start();
+
 $pageid = 0;
+
+if (isset($_GET['logout'])) {
+    session_destroy();
+    header("location:adminlogin.php");
+}
 
 ?>
 
@@ -28,13 +35,16 @@ $pageid = 0;
 
             <button id="button4"><a href="create_admin.php">Add new Admin</a></button><br><br><br><br>
 
-            <button id="button5" name='new'><a href='new.php'>Insert New Record</a></button>
+            <button id="button5" name='new'><a href='new.php'>Insert New Record</a></button><br><br><br><br>
+
+            <input id="button6" name="logout" value="Logout" type="submit">
 
         </form>
 
     </div>
     <div id="topbar">
         <h1>Admin Dashboard</h1>
+        <h3><?php echo $_SESSION['admin_usr'] ?></h3>
 
     </div>
     <div id="data_disp">

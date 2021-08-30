@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include('connect.php');
 ini_set('display_errors', 0);
 
@@ -11,6 +13,7 @@ $password = mysqli_real_escape_string($link, $password);
 
 $sql = "SELECT * FROM admins WHERE username='$username'and password='$password'";
 
+
 if (isset($_POST['login'])) {
 
 
@@ -21,6 +24,8 @@ if (isset($_POST['login'])) {
     if ($count == 1) {
         echo "<script>alert('Login Successful')</script>";
         header("location:admin.php");
+        $_SESSION['admin_usr'] = $username;
+        unset($_POST['login']);
     } else {
         echo "<script>alert('Login Failed')</script>";
     }
