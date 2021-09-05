@@ -22,10 +22,8 @@ if (isset($_POST['login'])) {
     $count = mysqli_num_rows($result);
 
     if ($count == 1) {
-        echo "<script>alert('Login Successful')</script>";
         header("location:admin.php");
         $_SESSION['admin_usr'] = $username;
-        unset($_POST['login']);
     } else {
         echo "<script>alert('Login Failed')</script>";
     }

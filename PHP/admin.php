@@ -3,6 +3,9 @@ ini_set('display_errors', 0);
 include('connect.php');
 
 session_start();
+if (($_SESSION['admin_usr'] == null)) {
+    header("location: adminlogin.php");
+}
 
 $pageid = 0;
 
