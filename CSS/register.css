@@ -43,7 +43,7 @@ body {
 }
 
 #create {
-  font-family: Red Rose;
+  font-family: 'Red Rose', cursive;;
   letter-spacing: 2px;
   font-size: 40px;
   color: #1b2223;
@@ -53,7 +53,7 @@ body {
 }
 
 #create_sub {
-  font-family: Maven Pro;
+  font-family: 'Maven Pro', sans-serif;;
   font-size: 16px;
   margin-left: 45px;
   margin-top: 10px;
@@ -75,7 +75,7 @@ body {
 label {
   display: block;
   margin-bottom: 10px;
-  font-family: Maven Pro;
+  font-family: 'Maven Pro', sans-serif;;
 }
 
 input {
@@ -83,7 +83,7 @@ input {
   border-bottom: solid rgba(71, 89, 92, 0.6) 1.5px;
   background-color: transparent;
   width: 300px;
-  font-family: Maven Pro;
+  font-family: 'Maven Pro', sans-serif;;
   font-size: 16px;
   transition: 0.5s ease;
 }
@@ -121,7 +121,7 @@ select {
   border: none;
   background: transparent;
   border-bottom: solid rgba(71, 89, 92, 0.6) 1.5px;
-  font-family: Maven Pro;
+  font-family: 'Maven Pro', sans-serif;;
   font-size: 14px;
   transition: 0.5s ease-out;
 }
@@ -147,7 +147,7 @@ select:focus {
   top: 500px;
   right: 20px;
   margin-left: 20px;
-  font-family: Maven Pro;
+  font-family: 'Maven Pro', sans-serif;;
   font-size: 14px;
 }
 
@@ -156,7 +156,7 @@ select:focus {
   top: 600px;
   left: 20px;
   margin-left: 20px;
-  font-family: Maven Pro;
+  font-family: 'Maven Pro', sans-serif;;
   font-size: 14px;
 }
 
@@ -176,7 +176,7 @@ select:focus {
   top: 620px;
   left: 20px;
   margin-left: 0px;
-  font-family: Maven Pro;
+  font-family: 'Maven Pro', sans-serif;;
   font-size: 14px;
 }
 
@@ -200,7 +200,7 @@ select:focus {
   width: 250px;
   height: 50px;
   border-radius: 5px;
-  font-family: Varela Round;
+  font-family: 'Quicksand', sans-serif;;
   font-size: 20px;
   transition: 0.5s;
 }

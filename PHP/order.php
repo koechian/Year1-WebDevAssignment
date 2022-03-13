@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../CSS\orders.css">
     <link rel="stylesheet" href="../CSS\index.css">
     <link rel="stylesheet" href="../CSS\about.css">
+    <link rel="stylesheet" href="../CSS\fonts.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Your Order</title>
 </head>
@@ -24,7 +26,7 @@
         </nav>
     </div>
     <div class="under">
-        <h1>The Bando</h1>
+        <h1 id="header_text">THE BANDO</h1>
     </div>
     <div id="reciept_cont">
         <div id="header">

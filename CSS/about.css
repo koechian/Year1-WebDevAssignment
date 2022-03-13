@@ -21,10 +21,28 @@ img {
 .under h1 {
   position: absolute;
   left: 32vw;
+  top: 9vh;
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 87px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000000;
+}
+#about-heading {
+  position: absolute;
+  left: 40vw;
   top: 3vh;
-  font-family: Ailerons;
-  font-size: 70px;
-  letter-spacing: 10px;
+  font-family: 'Smooch Sans', sans-serif;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 87px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000000;
 }
 
 .text {
@@ -35,7 +53,7 @@ img {
   width: 650px;
   height: 270px;
   text-align: center;
-  font-family: Varela Round;
+  font-family: 'Quicksand', sans-serif;;
 }
 
 article {

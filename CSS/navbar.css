@@ -19,7 +19,7 @@ nav {
 }
 .navbar a {
   letter-spacing: 2px;
-  font-family: Advent Pro;
+  font-family: 'Advent Pro', sans-serif;;
   font-size: 20px;
   font-weight: 800;
   transition: 0.3s ease-in;

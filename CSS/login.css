@@ -16,7 +16,7 @@ a {
   left: 10vw;
   bottom: 30vh;
   backdrop-filter: blur(20px);
-  font-family: Codec Cold Trial;
+  font-family: 'Hubballi', cursive;;
   font-size: 20px;
   color: #ffff;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 #text1 {
-  font-family: Varela Round;
+  font-family: 'Quicksand', sans-serif;;
   font-size: 15px;
   margin-left: 20px;
   line-height: 30px;
@@ -80,12 +80,11 @@ body {
 }
 
 .bottom {
-  top: 90vh;
   background-color: rgb(35, 35, 26);
 }
 
 #login_text {
-  font-family: Red Rose;
+  font-family: 'Red Rose', cursive;;
   color: rgb(35, 35, 26);
   letter-spacing: 20px;
   font-size: 50px;
@@ -107,7 +106,7 @@ body {
   border-bottom: solid 1px;
   margin-left: 10px;
   font-size: 15px;
-  font-family: Varela Round;
+  font-family: 'Quicksand', sans-serif;;
   padding: 12px;
   transition: 1s;
   transition-timing-function: ease;
@@ -126,7 +125,7 @@ body {
   letter-spacing: 3px;
   font-size: 12px;
   text-transform: uppercase;
-  font-family: Varela Round;
+  font-family: 'Quicksand', sans-serif;;
 }
 
 #reset:hover {
@@ -142,7 +141,7 @@ body {
   background: #758e4f;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: Codec Cold Trial;
+  font-family: 'Hubballi', cursive;;
   font-size: 20px;
   color: rgb(35, 35, 26);
   transition: 0.3s;
@@ -155,7 +154,7 @@ body {
 
 #connect_text {
   text-align: center;
-  font-family: Varela Round;
+  font-family: 'Quicksand', sans-serif;;
 }
 
 #twitter_login_page,
@@ -182,7 +181,7 @@ body {
 }
 
 .invalid-feedback {
-  font-family: Red Rose;
+  font-family: 'Red Rose', cursive;;
   font-size: 15px;
   position: absolute;
 }

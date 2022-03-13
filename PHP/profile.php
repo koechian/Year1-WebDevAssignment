@@ -35,6 +35,8 @@ if (isset($_POST['purge'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/profile.css">
     <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS\fonts.css">
+
     <link rel="shortcut icon" href="../Assets/Images/favicon.ico" type="image/x-icon">
     <title>My Profile</title>
 </head>
@@ -46,7 +48,7 @@ if (isset($_POST['purge'])) {
                 <nav>
                     <ul>
                         <li><a href="../index.php">Go Back</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="../HTML/about.html">About Us</a></li>
                         <li><a href="#about_pointer">Find A Bistro</a></li>
                         <li><a href="../index.php">Order Now</a></li>
                     </ul>
